@@ -186,27 +186,21 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="location-form">
-                            <h3>Request for a car wash</h3>
-                            <form>
-                                <div class="control-group">
-                                    <input type="text" class="form-control" placeholder="Name" required="required" />
-                                </div>
-                                <div class="control-group">
-                                    <input type="email" class="form-control" placeholder="Email" required="required" />
-                                </div>
-                                <div class="control-group">
-                                    <textarea class="form-control" placeholder="Description" required="required"></textarea>
-                                </div>
-                                <div>
-                                    <button class="btn btn-custom" type="submit">Send Request</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <form action="proses_booking.php" method="POST">
+    <div class="control-group">
+        <input type="text" name="nama" class="form-control" placeholder="Name" required />
+    </div>
+    <div class="control-group">
+        <input type="email" name="email" class="form-control" placeholder="Email" required />
+    </div>
+    <div class="control-group">
+        <textarea name="deskripsi" class="form-control" placeholder="Description" required></textarea>
+    </div>
+    <div>
+        <button class="btn btn-custom" type="submit">Send Request</button>
+    </div>
+</form>
+
         <!-- Location End -->
         
         
@@ -274,6 +268,7 @@
         <div id="loader" class="show">
             <div class="loader"></div>
         </div>
+        
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
