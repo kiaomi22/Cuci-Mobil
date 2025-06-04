@@ -1,13 +1,11 @@
 <?php
 $servername = "localhost";
-$username = "root";  // sesuaikan username mysql kamu
-$password = "";      // sesuaikan password mysql kamu
-$dbname = "cuci_mobil";
+$username = "root";      // biasanya root kalau lokal
+$password = "";          // kosong kalau di lokal default
+$dbname = "cuci_mobil"; // nama database sudah kamu buat
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
