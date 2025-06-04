@@ -187,19 +187,31 @@
                     </div>
                     <div class="col-lg-5">
                         <form action="proses_booking.php" method="POST">
-    <div class="control-group">
-        <input type="text" name="nama" class="form-control" placeholder="Name" required />
-    </div>
-    <div class="control-group">
-        <input type="email" name="email" class="form-control" placeholder="Email" required />
-    </div>
-    <div class="control-group">
-        <textarea name="deskripsi" class="form-control" placeholder="Description" required></textarea>
-    </div>
-    <div>
-        <button class="btn btn-custom" type="submit">Send Request</button>
-    </div>
-</form>
+                            <div class="control-group">
+                                <input type="text" name="nama_pelanggan" class="form-control" placeholder="Nama" required />
+                            </div>
+                            <div class="control-group">
+                                <input type="text" name="nomor_plat" class="form-control" placeholder="Nomor Plat" required />
+                            </div>
+                            <div class="control-group">
+                                <select name="jenis_layanan" class="form-control" required>
+                                    <option value="" disabled selected>Pilih jenis layanan</option>
+                                    <option value="Cuci Luar">Cuci Luar</option>
+                                    <option value="Cuci Dalam">Cuci Dalam</option>
+                                    <option value="Cuci Lengkap">Cuci Lengkap</option>
+                                </select>
+                            </div>
+                            <div class="control-group">
+                                <input type="date" name="tanggal" class="form-control" required />
+                            </div>
+                            <div class="control-group">
+                                <input type="time" name="jam" class="form-control" required />
+                            </div>
+                            <div>
+                                <button class="btn btn-custom" type="submit">Booking</button>
+                            </div>
+                        </form>
+                        
 
         <!-- Location End -->
         
