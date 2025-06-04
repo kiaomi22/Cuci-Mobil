@@ -718,6 +718,7 @@ a:focus {
     display: flex;
     flex-direction: column;
     margin-bottom: 45px;
+    padding-left: 65px;
 }
 
 .service .service-item i {
