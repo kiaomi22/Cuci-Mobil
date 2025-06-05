@@ -1,25 +1,21 @@
 <?php
-include 'koneksi.php';  // Ganti dari test_koneksi.php ke koneksi.php
+include 'koneksi.php';  // koneksi ke database
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nama_pelanggan = $_POST['nama_pelanggan'];
-    $nomor_plat = $_POST['nomor_plat'];
-    $jenis_layanan = $_POST['jenis_layanan'];
-    $tanggal = $_POST['tanggal'];
-    $jam = $_POST['jam'];
+    $nama_pelanggan = $conn->real_escape_string($_POST['nama_pelanggan']);
+    $nomor_plat = $conn->real_escape_string($_POST['nomor_plat']);
+    $jenis_layanan = $conn->real_escape_string($_POST['jenis_layanan']);
+    $tanggal = $conn->real_escape_string($_POST['tanggal']);
+    $jam = $conn->real_escape_string($_POST['jam']);
 
-    // Status default saat booking
-    $status = "menunggu";
-
-    // Query simpan ke database
-    $sql = "INSERT INTO booking (NAMA_PELANGGAN, NOMOR_PLAT, JENIS_LAYANAN, TANGGAL, JAM, STATUS)
-            VALUES ('$nama_pelanggan', '$nomor_plat', '$jenis_layanan', '$tanggal', '$jam', '$status')";
+    // ID_ADMIN dibiarkan NULL karena booking belum ditangani admin
+    $sql = "INSERT INTO booking (ID_ADMIN, NAMA_PELANGGAN, NOMOR_PLAT, JENIS_LAYANAN, TANGGAL, JAM, STATUS) 
+            VALUES (NULL, '$nama_pelanggan', '$nomor_plat', '$jenis_layanan', '$tanggal', '$jam', 'menunggu')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Booking berhasil disimpan!";
-        // redirect atau tampilkan pesan sukses
+        echo "✅ Booking berhasil disimpan!";
     } else {
-        echo "Error: " . $conn->error;
+        echo "❌ Error: " . $conn->error;
     }
 } else {
     echo "Metode bukan POST.";
