@@ -53,8 +53,8 @@ session_start();
                                   <i class="far fa-clock"></i>
                               </div>
                               <div class="top-bar-text">
-                                  <h3>Opening Hour</h3>
-                                  <p>Mon - Fri, 8:00 - 9:00</p>
+                                  <h3>Jam Buka</h3>
+                                  <p>Senin - Jumat, 8:00 - 9:00</p>
                               </div>
                           </div>
                       </div>
@@ -66,7 +66,7 @@ session_start();
                                   <i class="fa fa-phone-alt"></i>
                               </div>
                               <div class="top-bar-text">
-                                  <h3>Call Us</h3>
+                                  <h3>Telepon</h3>
                                   <p>+62 857-5881-0007</p>
                               </div>
                           </div>
@@ -80,14 +80,14 @@ session_start();
                                       <i class="far fa-envelope"></i>
                                   </div>
                                   <div class="top-bar-text">
-                                      <h3>Email Us</h3>
+                                      <h3>Email</h3>
                                       <p>blynkcarwash@gmail.com</p>
                                   </div>
                               </div>
                                <?php if (isset($_SESSION['username'])): ?>
-                                <a href="logout.php" class="btn btn-danger btn-sm ml-5">Logout</a>
+                                <a href="logout.php" class="btn btn-danger btn-sm ml-5">Keluar</a>
                             <?php else: ?>
-                                <a href="login.php" class="btn btn-primary btn-sm ml-5">Login</a>
+                                <a href="login.php" class="btn btn-primary btn-sm ml-5">Masuk</a>
                             <?php endif; ?>
                           </div>
                       </div>
@@ -98,683 +98,681 @@ session_start();
   </div>
   <!-- Top Bar End -->
 
-        <!-- Nav Bar Start -->
-        <div class="nav-bar">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                    <a href="#" class="navbar-brand">MENU</a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+<!-- Navigasi Mulai -->
+<div class="nav-bar">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a href="#" class="navbar-brand">MENU</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Service</a>
-                            <a href="price.html" class="nav-item nav-link">Price</a>
-                            <a href="location.html" class="nav-item nav-link">Washing Points</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu">
-                                    <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                    <a href="single.html" class="dropdown-item">Detail Page</a>
-                                    <a href="team.html" class="dropdown-item">Team Member</a>
-                                    <a href="booking.html" class="dropdown-item">Schedule Booking</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <div class="ml-auto">
-                            <a class="btn btn-custom" href="#">Get Appointment</a>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav mr-auto">
+                    <a href="index.html" class="nav-item nav-link active">Beranda</a>
+                    <a href="about.html" class="nav-item nav-link">Tentang</a>
+                    <a href="service.html" class="nav-item nav-link">Layanan</a>
+                    <a href="price.html" class="nav-item nav-link">Harga</a>
+                    <a href="location.html" class="nav-item nav-link">Lokasi Cuci</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Halaman Lain</a>
+                        <div class="dropdown-menu">
+                            <a href="blog.html" class="dropdown-item">Blog</a>
+                            <a href="single.html" class="dropdown-item">Detail</a>
+                            <a href="team.html" class="dropdown-item">Tim Kami</a>
+                            <a href="booking.html" class="dropdown-item">Jadwal Booking</a>
                         </div>
                     </div>
-                </nav>
+                    <a href="contact.html" class="nav-item nav-link">Kontak</a>
+                </div>
+                <div class="ml-auto">
+                    <a class="btn btn-custom" href="#">Pesan Sekarang</a>
+                </div>
             </div>
-        </div>
-        <!-- Nav Bar End -->
+        </nav>
+    </div>
+</div>
+<!-- Navigasi Selesai -->
 
 
-        <!-- Carousel Start -->
+
+<!-- Carousel Mulai -->
 <div class="carousel">
     <div class="container-fluid">
         <div class="owl-carousel">
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="img/carousel-1.jpg" alt="Image">
+                    <img src="img/carousel-1.jpg" alt="Gambar">
                 </div>
                 <div class="carousel-text">
-                    <h3>Auto Spa & Detailing</h3>
-                    <h1>Bring Back the Shine</h1>
+                    <h3>Spa & Detailing Mobil</h3>
+                    <h1>Kembalikan Kilau Mobilmu</h1>
                     <p>
-                        Give your car the care it deserves with our premium washing and detailing services.
+                        Berikan mobilmu perawatan terbaik dengan layanan cuci dan detailing premium dari kami.
                     </p>
-                    <a class="btn btn-custom" href="service.html">View Service</a>
+                    <a class="btn btn-custom" href="service.html">Lihat Layanan</a>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="img/carousel-2.jpg" alt="Image">
+                    <img src="img/carousel-2.jpg" alt="Gambar">
                 </div>
                 <div class="carousel-text">
-                    <h3>Trusted Car Care</h3>
-                    <h1>Experience Quality Service</h1>
+                    <h3>Perawatan Mobil Terpercaya</h3>
+                    <h1>Rasakan Layanan Berkualitas</h1>
                     <p>
-                        Our expert team ensures your vehicle looks and feels like new – inside and out.
+                        Tim ahli kami memastikan mobilmu tampak dan terasa seperti baru — luar dalam.
                     </p>
-                    <a class="btn btn-custom" href="service.html">View Service</a>
+                    <a class="btn btn-custom" href="service.html">Lihat Layanan</a>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="img/carousel-3.jpg" alt="Image">
+                    <img src="img/carousel-3.jpg" alt="Gambar">
                 </div>
                 <div class="carousel-text">
-                    <h3>Full-Service Cleaning</h3>
-                    <h1>Interior & Exterior Perfection</h1>
+                    <h3>Cuci Lengkap</h3>
+                    <h1>Sempurna Luar & Dalam</h1>
                     <p>
-                        From deep cleaning to protective waxing, we provide the ultimate car pampering.
+                        Mulai dari pembersihan menyeluruh hingga waxing pelindung, kami hadirkan perawatan maksimal untuk mobilmu.
                     </p>
-                    <a class="btn btn-custom" href="service.html">View Services</a>
+                    <a class="btn btn-custom" href="service.html">Lihat Layanan</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Carousel End -->
+<!-- Carousel Selesai -->
         
 
-        <!-- About Start -->
-        <div class="about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="img/about.jpg" alt="Image">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="section-header text-left">
-                            <p>About Us</p>
-                            <h2>car washing and detailing</h2>
-                        </div>
-                        <div class="about-content">
-                            <p>
-                                At Carwash, we specialize in professional car washing and detailing services designed to keep your vehicle spotless, inside and out. We believe a clean car not only looks better — it feels better to drive.
-                            </p>
-                            <ul>
-                                <li><i class="far fa-check-circle"></i>Seats washing – Removing stains and dirt from car seats</li>
-                                <li><i class="far fa-check-circle"></i>Vacuum cleaning – Deep vacuuming for a dust-free interior</li>
-                                <li><i class="far fa-check-circle"></i>Interior wet cleaning – Thorough wet cleaning for interior surfaces</li>
-                                <li><i class="far fa-check-circle"></i>Window wiping – Streak-free cleaning for crystal-clear windows</li>
-                            </ul>
-                            <a class="btn btn-custom" href="">Learn More</a>
-                        </div>
-                    </div>
+<!-- Tentang Kami Mulai -->
+<div class="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="img/about.jpg" alt="Gambar">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="section-header text-left">
+                    <p>Tentang Kami</p>
+                    <h2>Cuci dan Detailing Mobil</h2>
+                </div>
+                <div class="about-content">
+                    <p>
+                        Di Carwash, kami ahli dalam layanan cuci dan detailing mobil profesional yang dirancang untuk menjaga kendaraanmu tetap bersih luar dan dalam. Kami percaya bahwa mobil bersih bukan hanya terlihat lebih baik — tetapi juga lebih nyaman dikendarai.
+                    </p>
+                    <ul>
+                        <li><i class="far fa-check-circle"></i>Cuci jok – Menghilangkan noda dan kotoran pada jok mobil</li>
+                        <li><i class="far fa-check-circle"></i>Vakum – Pembersihan menyeluruh untuk interior bebas debu</li>
+                        <li><i class="far fa-check-circle"></i>Cuci basah interior – Pembersihan menyeluruh pada permukaan interior</li>
+                        <li><i class="far fa-check-circle"></i>Bersih kaca – Pembersihan tanpa gores untuk kaca bening</li>
+                    </ul>
+                    <a class="btn btn-custom" href="">Selengkapnya</a>
                 </div>
             </div>
         </div>
-        <!-- About End -->
+    </div>
+</div>
+<!-- Tentang Kami Selesai -->
 
 
 
-        <!-- Service Start -->
+
+      <!-- Layanan Mulai -->
 <div class="service">
     <div class="container">
         <div class="section-header text-center">
-            <p>What We Do?</p>
-            <h2>Premium Washing Services</h2>
+            <p>Apa yang Kami Tawarkan?</p>
+            <h2>Layanan Cuci Premium</h2>
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="service-item">
                     <i class="flaticon-car-wash-1"></i>
-                    <h3>Exterior Washing</h3>
-                    <p>We provide a thorough exterior wash that removes dirt and grime to make your car shine like new.</p>
+                    <h3>Cuci Eksterior</h3>
+                    <p>Kami memberikan pencucian eksterior menyeluruh untuk menghilangkan kotoran dan debu sehingga mobilmu kembali bersinar seperti baru.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="service-item">
                     <i class="flaticon-car-wash"></i>
-                    <h3>Interior Washing</h3>
-                    <p>Our interior cleaning service deep cleans your vehicle’s upholstery and surfaces for a fresh feel.</p>
+                    <h3>Cuci Interior</h3>
+                    <p>Layanan pembersihan interior kami membersihkan secara mendalam jok dan permukaan dalam mobil untuk memberikan kesegaran maksimal.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="service-item">
                     <i class="flaticon-vacuum-cleaner"></i>
-                    <h3>Vacuum Cleaning</h3>
-                    <p>We use professional vacuums to remove dust, dirt, and debris from all interior areas of your car.</p>
+                    <h3>Vakum Interior</h3>
+                    <p>Kami menggunakan vakum profesional untuk menyedot debu dan kotoran dari seluruh bagian dalam mobil.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="service-item">
                     <i class="flaticon-seat"></i>
-                    <h3>Seats Washing</h3>
-                    <p>Specialized seat cleaning to remove stains and odors, restoring comfort and cleanliness.</p>
+                    <h3>Cuci Jok</h3>
+                    <p>Pembersihan jok secara khusus untuk menghilangkan noda dan bau, membuat mobil terasa nyaman dan bersih kembali.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="service-item">
                     <i class="flaticon-car-service"></i>
-                    <h3>Window Wiping</h3>
-                    <p>Crystal-clear window cleaning for better visibility and an enhanced appearance.</p>
+                    <h3>Bersih Kaca</h3>
+                    <p>Pembersihan kaca tanpa gores untuk tampilan lebih jernih dan meningkatkan visibilitas saat berkendara.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="service-item">
                     <i class="flaticon-car-service-2"></i>
-                    <h3>Wet Cleaning</h3>
-                    <p>Complete wet cleaning to eliminate stubborn dirt and ensure a spotless finish.</p>
+                    <h3>Cuci Basah</h3>
+                    <p>Pembersihan basah menyeluruh untuk menghilangkan kotoran membandel dan memastikan hasil akhir yang bersih sempurna.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="service-item">
                     <i class="flaticon-car-wash"></i>
-                    <h3>Oil Changing</h3>
-                    <p>Quick and professional oil changes to keep your engine running smoothly.</p>
+                    <h3>Ganti Oli</h3>
+                    <p>Penggantian oli cepat dan profesional untuk menjaga performa mesin tetap optimal.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="service-item">
                     <i class="flaticon-brush-1"></i>
-                    <h3>Brake Repairing</h3>
-                    <p>Reliable brake repair services to ensure your safety on the road.</p>
+                    <h3>Perbaikan Rem</h3>
+                    <p>Layanan perbaikan rem yang andal untuk memastikan keamanan kamu saat berkendara.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Service End -->
+<!-- Layanan Selesai -->
+
         
         
-        <!-- Facts Start -->
-        <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="facts-item">
-                            <i class="fa fa-map-marker-alt"></i>
-                            <div class="facts-text">
-                                <h3 data-toggle="counter-up">5</h3>
-                                <p>Service Points</p>
-                            </div>
-                        </div>
+<!-- Fakta Mulai -->
+<div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <div class="facts-text">
+                        <h3 data-toggle="counter-up">5</h3>
+                        <p>Titik Layanan</p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="facts-item">
-                            <i class="fa fa-user"></i>
-                            <div class="facts-text">
-                                <h3 data-toggle="counter-up">10</h3>
-                                <p>Engineers & Workers</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="fa fa-user"></i>
+                    <div class="facts-text">
+                        <h3 data-toggle="counter-up">10</h3>
+                        <p>Teknisi & Pekerja</p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="facts-item">
-                            <i class="fa fa-users"></i>
-                            <div class="facts-text">
-                                <h3 data-toggle="counter-up">100</h3>
-                                <p>Happy Clients</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="fa fa-users"></i>
+                    <div class="facts-text">
+                        <h3 data-toggle="counter-up">100</h3>
+                        <p>Pelanggan Puas</p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="facts-item">
-                            <i class="fa fa-check"></i>
-                            <div class="facts-text">
-                                <h3 data-toggle="counter-up">250</h3>
-                                <p>Projects Completed</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="fa fa-check"></i>
+                    <div class="facts-text">
+                        <h3 data-toggle="counter-up">250</h3>
+                        <p>Proyek Selesai</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Facts End -->
-        
-        
-        <!-- Price Start -->
+    </div>
+</div>
+<!-- Fakta Selesai -->
+
+<!-- Harga Mulai -->
 <div class="price">
     <div class="container">
         <div class="section-header text-center">
-            <p>Washing Plan</p>
-            <h2>Choose Your Plan</h2>
+            <p>Paket Cuci</p>
+            <h2>Pilih Paket Kamu</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="price-item">
                     <div class="price-header">
-                        <h3>Basic Cleaning</h3>
+                        <h3>Cuci Basic</h3>
                         <h2><span>Rp</span><strong>75.000</strong></h2>
                     </div>
                     <div class="price-body">
                         <ul>
-                            <li><i class="far fa-check-circle"></i>Seats Washing</li>
-                            <li><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Exterior Cleaning</li>
-                            <li><i class="far fa-times-circle"></i>Interior Wet Cleaning</li>
-                            <li><i class="far fa-times-circle"></i>Window Wiping</li>
+                            <li><i class="far fa-check-circle"></i>Cuci Jok</li>
+                            <li><i class="far fa-check-circle"></i>Vakum Kabin</li>
+                            <li><i class="far fa-check-circle"></i>Cuci Luar</li>
+                            <li><i class="far fa-times-circle"></i>Cuci Dalam Basah</li>
+                            <li><i class="far fa-times-circle"></i>Bersih Kaca</li>
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom" href="">Book Now</a>
+                        <a class="btn btn-custom" href="">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="price-item featured-item">
                     <div class="price-header">
-                        <h3>Premium Cleaning</h3>
+                        <h3>Cuci Premium</h3>
                         <h2><span>Rp</span><strong>105.000</strong></h2>
                     </div>
                     <div class="price-body">
                         <ul>
-                            <li><i class="far fa-check-circle"></i>Seats Washing</li>
-                            <li><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Exterior Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Interior Wet Cleaning</li>
-                            <li><i class="far fa-times-circle"></i>Window Wiping</li>
+                            <li><i class="far fa-check-circle"></i>Cuci Jok</li>
+                            <li><i class="far fa-check-circle"></i>Vakum Kabin</li>
+                            <li><i class="far fa-check-circle"></i>Cuci Luar</li>
+                            <li><i class="far fa-check-circle"></i>Cuci Dalam Basah</li>
+                            <li><i class="far fa-times-circle"></i>Bersih Kaca</li>
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom" href="">Book Now</a>
+                        <a class="btn btn-custom" href="">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="price-item">
                     <div class="price-header">
-                        <h3>Complex Cleaning</h3>
+                        <h3>Cuci Komplet</h3>
                         <h2><span>Rp</span><strong>150.000</strong></h2>
                     </div>
                     <div class="price-body">
                         <ul>
-                            <li><i class="far fa-check-circle"></i>Seats Washing</li>
-                            <li><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Exterior Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Interior Wet Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Window Wiping</li>
+                            <li><i class="far fa-check-circle"></i>Cuci Jok</li>
+                            <li><i class="far fa-check-circle"></i>Vakum Kabin</li>
+                            <li><i class="far fa-check-circle"></i>Cuci Luar</li>
+                            <li><i class="far fa-check-circle"></i>Cuci Dalam Basah</li>
+                            <li><i class="far fa-check-circle"></i>Bersih Kaca</li>
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom" href="">Book Now</a>
+                        <a class="btn btn-custom" href="">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Price End -->
+<!-- Harga Selesai -->
 
-        
-        
-        <!-- Location Start -->
-        <div class="location">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="section-header text-left">
-                            <p>Washing Points</p>
-                            <h2>Car Washing & Care Points</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="location-item">
-                                    <i class="fa fa-map-marker-alt"></i>
-                                    <div class="location-text">
-                                        <h3>Car Washing Point</h3>
-                                        <p>Jalan Lada Ujung III, Rajabasa, Bandar Lampung</p>
-                                        <p><strong>Call:</strong>+62 857-5881-0007</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="location-item">
-                                    <i class="fa fa-map-marker-alt"></i>
-                                    <div class="location-text">
-                                        <h3>Car Washing Point</h3>
-                                        <p>Jl. Durian, Sukarame, Bandar Lampung</p>
-                                        <p><strong>Call:</strong>+62 812-7160-7722</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="location-item">
-                                    <i class="fa fa-map-marker-alt"></i>
-                                    <div class="location-text">
-                                        <h3>Car Washing Point</h3>
-                                        <p>Perumahan Abdi Negara, Sukabumi, Bandar Lampung</p>
-                                        <p><strong>Call:</strong>+62 851-5519-9375</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="location-item">
-                                    <i class="fa fa-map-marker-alt"></i>
-                                    <div class="location-text">
-                                        <h3>Car Washing Point</h3>
-                                        <p>Jl.Pulau Belitung, Sukabumi, Bandar Lampung</p>
-                                        <p><strong>Call:</strong>+62 822-1071-6261</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="location-form">
-                            <h3>Request for a car wash</h3>
-                            <form method = "post" action= "request_submit.php">
-                                <div class="control-group">
-                                    <input type="text" class="form-control" placeholder="Name" required="required" />
-                                </div>
-                                <div class="control-group">
-                                    <input type="email" class="form-control" placeholder="Email" required="required" />
-                                </div>
-                                <div class="control-group">
-                                    <textarea class="form-control" placeholder="Description" required="required"></textarea>
-                                </div>
-                                <div>
-                                    <button class="btn btn-custom" type="submit">Send Request</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Location End -->
-
-
-        <!-- Team Start -->
-        <div class="team">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Meet Our Team</p>
-                    <h2>Our Engineers & Workers</h2>
+<!-- Lokasi Mulai -->
+<div class="location">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="section-header text-left">
+                    <p>Titik Cuci</p>
+                    <h2>Lokasi Layanan Cuci Mobil</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-1.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Aleea Carisa</h2>
-                                <p>Engineer</p>
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
+                    <div class="col-md-6">
+                        <div class="location-item">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <div class="location-text">
+                                <h3>Cabang Utama Car Wash</h3>
+                                <p>Jalan Lada Ujung III, Rajabasa, Bandar Lampung</p>
+                                <p><strong>Telp:</strong>+62 857-5881-0007</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-2.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Febby Yolanda</h2>
-                                <p>Engineer</p>
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
+                    <div class="col-md-6">
+                        <div class="location-item">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <div class="location-text">
+                                <h3>Cabang 1 Car Wash</h3>
+                                <p>Jl. Durian, Sukarame, Bandar Lampung</p>
+                                <p><strong>Telp:</strong>+62 812-7160-7722</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-3.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Nur Aila Zahra</h2>
-                                <p>Worker</p>
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
+                    <div class="col-md-6">
+                        <div class="location-item">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <div class="location-text">
+                            <h3>Cabang 2 Car Wash</h3>
+                                <p>Perumahan Abdi Negara, Sukabumi, Bandar Lampung</p>
+                                <p><strong>Telp:</strong>+62 851-5519-9375</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-4.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Zaskia Jihan Nabila</h2>
-                                <p>Worker</p>
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
+                    <div class="col-md-6">
+                        <div class="location-item">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <div class="location-text">
+                            <h3>Cabang 3 Car Wash</h3>
+                                <p>Jl. Pulau Belitung, Sukabumi, Bandar Lampung</p>
+                                <p><strong>Telp:</strong>+62 822-1071-6261</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Team End -->
-        
-        
-        <!-- Testimonial Start -->
-        <div class="testimonial">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Testimonial</p>
-                    <h2>What our clients say</h2>
+            <div class="col-lg-5">
+                <div class="location-form">
+                    <h3>Request Cuci Mobil</h3>
+                    <form method="post" action="request_submit.php">
+                        <div class="control-group">
+                            <input type="text" class="form-control" placeholder="Nama" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" placeholder="Email" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control" placeholder="Keterangan" required="required"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn btn-custom" type="submit">Kirim Permintaan</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <img src="img/testimonial-1.jpg" alt="Image">
-                        <div class="testimonial-text">
-                            <h3>Fajar Pratama</h3>
-                            <h4>Complex Cleaning</h4>
-                            <p>
-                                Excellent service! My car has never been this clean. Definitely coming back here again.
-                            </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Lokasi Selesai -->
+
+
+
+<!-- Team Start -->
+<div class="team">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Kenali Tim Kami</p>
+            <h2>Insinyur & Pekerja Kami</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/team-1.jpg" alt="Foto Tim">
+                    </div>
+                    <div class="team-text">
+                        <h2>Aleea Carisa</h2>
+                        <p>Insinyur</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
-                    <div class="testimonial-item">
-                        <img src="img/testimonial-2.jpg" alt="Image">
-                        <div class="testimonial-text">
-                            <h3>Siti Aulia</h3>
-                            <h4>Premium Cleaning</h4>
-                            <p>
-                                Friendly staff, quick cleaning, and great results. Highly recommended for anyone needing car care.
-                            </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/team-2.jpg" alt="Foto Tim">
+                    </div>
+                    <div class="team-text">
+                        <h2>Febby Yolanda</h2>
+                        <p>Insinyur</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
-                    <div class="testimonial-item">
-                        <img src="img/testimonial-3.jpg" alt="Image">
-                        <div class="testimonial-text">
-                            <h3>Rizky Hidayat</h3>
-                            <h4>Complex Cleaning</h4>
-                            <p>
-                                Affordable packages and very thorough work. I tried the premium package and it was worth every rupiah!
-                            </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/team-3.jpg" alt="Foto Tim">
+                    </div>
+                    <div class="team-text">
+                        <h2>Nur Aila Zahra</h2>
+                        <p>Pekerja</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
-                    <div class="testimonial-item">
-                        <img src="img/testimonial-4.jpg" alt="Image">
-                        <div class="testimonial-text">
-                            <h3>Putri Anggraini</h3>
-                            <h4>Basic Cleaning</h4>
-                            <p>
-                                Booking was super easy, and the result exceeded my expectations. Totally satisfied!
-                            </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/team-4.jpg" alt="Foto Tim">
+                    </div>
+                    <div class="team-text">
+                        <h2>Zaskia Jihan Nabila</h2>
+                        <p>Pekerja</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
+    </div>
+</div>
+<!-- Team End -->
 
-
-
-        <!-- Blog Start -->
-        <div class="blog">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Our Blog</p>
-                    <h2>Latest news & articles</h2>
+<!-- Testimonial Start -->
+<div class="testimonial">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Testimoni</p>
+            <h2>Apa kata pelanggan kami</h2>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+            <div class="testimonial-item">
+                <img src="img/testimonial-1.jpg" alt="Foto">
+                <div class="testimonial-text">
+                    <h3>Fajar Pratama</h3>
+                    <h4>Cuci Kompleks</h4>
+                    <p>
+                        Layanan luar biasa! Mobil saya belum pernah sebersih ini. Pasti akan kembali lagi.
+                    </p>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-1.jpg" alt="Image">
-                                <div class="meta-date">
-                                    <span>01</span>
-                                    <strong>Jun</strong>
-                                    <span>2025</span>
-                                </div>
-                            </div>
-                            <div class="blog-text">
-                                <h3><a href="#">5 Reasons to Wash Your Car Regularly</a></h3>
-                                <p>
-                                    Regular car washing helps maintain paint quality, prevents rust, and ensures better visibility and safety while driving. Discover why it's more than just appearance.
-                                </p>
-                            </div>
-                            <div class="blog-meta">
-                                <p><i class="fa fa-user"></i><a href="">Admin</a></p>
-                                <p><i class="fa fa-folder"></i><a href="">Car Care</a></p>
-                                <p><i class="fa fa-comments"></i><a href="">12 Comments</a></p>
-                            </div>
+            </div>
+            <div class="testimonial-item">
+                <img src="img/testimonial-2.jpg" alt="Foto">
+                <div class="testimonial-text">
+                    <h3>Siti Aulia</h3>
+                    <h4>Cuci Premium</h4>
+                    <p>
+                        Staf ramah, pembersihan cepat, dan hasil memuaskan. Sangat direkomendasikan!
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <img src="img/testimonial-3.jpg" alt="Foto">
+                <div class="testimonial-text">
+                    <h3>Rizky Hidayat</h3>
+                    <h4>Cuci Kompleks</h4>
+                    <p>
+                        Paketnya terjangkau dan hasil sangat rapi. Saya coba paket premium dan benar-benar worth it!
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <img src="img/testimonial-4.jpg" alt="Foto">
+                <div class="testimonial-text">
+                    <h3>Putri Anggraini</h3>
+                    <h4>Cuci Dasar</h4>
+                    <p>
+                        Booking sangat mudah, dan hasilnya melebihi ekspektasi. Sangat puas!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+<!-- Blog Start -->
+<div class="blog">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Blog Kami</p>
+            <h2>Berita & Artikel Terbaru</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/blog-1.jpg" alt="Gambar">
+                        <div class="meta-date">
+                            <span>01</span>
+                            <strong>Jun</strong>
+                            <span>2025</span>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-2.jpg" alt="Image">
-                                <div class="meta-date">
-                                    <span>15</span>
-                                    <strong>May</strong>
-                                    <span>2025</span>
-                                </div>
-                            </div>
-                            <div class="blog-text">
-                                <h3><a href="#">How to Choose the Right Cleaning Package</a></h3>
-                                <p>
-                                    From basic to complex cleaning, each package serves different needs. Learn which plan suits your car's condition and budget the best in this quick guide.
-                                </p>
-                            </div>
-                            <div class="blog-meta">
-                                <p><i class="fa fa-user"></i><a href="">Admin</a></p>
-                                <p><i class="fa fa-folder"></i><a href="">Tips</a></p>
-                                <p><i class="fa fa-comments"></i><a href="">8 Comments</a></p>
-                            </div>
+                    <div class="blog-text">
+                        <h3><a href="#">5 Alasan Kenapa Mobil Harus Sering Dicuci</a></h3>
+                        <p>
+                            Mencuci mobil secara rutin menjaga kualitas cat, mencegah karat, dan meningkatkan keselamatan berkendara. Yuk cari tahu kenapa ini penting!
+                        </p>
+                    </div>
+                    <div class="blog-meta">
+                        <p><i class="fa fa-user"></i><a href="">Admin</a></p>
+                        <p><i class="fa fa-folder"></i><a href="">Perawatan Mobil</a></p>
+                        <p><i class="fa fa-comments"></i><a href="">12 Komentar</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/blog-2.jpg" alt="Gambar">
+                        <div class="meta-date">
+                            <span>15</span>
+                            <strong>Mei</strong>
+                            <span>2025</span>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-3.jpg" alt="Image">
-                                <div class="meta-date">
-                                    <span>22</span>
-                                    <strong>Apr</strong>
-                                    <span>2025</span>
-                                </div>
-                            </div>
-                            <div class="blog-text">
-                                <h3><a href="#">The Importance of Interior Car Cleaning</a></h3>
-                                <p>
-                                    A clean car interior not only improves air quality but also enhances comfort and resale value. Read how our wet cleaning service makes a difference.
-                                </p>
-                            </div>
-                            <div class="blog-meta">
-                                <p><i class="fa fa-user"></i><a href="">Admin</a></p>
-                                <p><i class="fa fa-folder"></i><a href="">Interior</a></p>
-                                <p><i class="fa fa-comments"></i><a href="">5 Comments</a></p>
-                            </div>
+                    <div class="blog-text">
+                        <h3><a href="#">Cara Memilih Paket Cuci yang Tepat</a></h3>
+                        <p>
+                            Dari paket dasar hingga kompleks, tiap layanan punya manfaat berbeda. Simak panduan memilih paket sesuai kondisi mobil dan budget kamu!
+                        </p>
+                    </div>
+                    <div class="blog-meta">
+                        <p><i class="fa fa-user"></i><a href="">Admin</a></p>
+                        <p><i class="fa fa-folder"></i><a href="">Tips</a></p>
+                        <p><i class="fa fa-comments"></i><a href="">8 Komentar</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/blog-3.jpg" alt="Gambar">
+                        <div class="meta-date">
+                            <span>22</span>
+                            <strong>Apr</strong>
+                            <span>2025</span>
                         </div>
+                    </div>
+                    <div class="blog-text">
+                        <h3><a href="#">Pentingnya Membersihkan Interior Mobil</a></h3>
+                        <p>
+                            Interior yang bersih bikin udara lebih sehat dan bikin nyaman saat berkendara. Simak kenapa layanan pembersih basah kami jadi solusi terbaik!
+                        </p>
+                    </div>
+                    <div class="blog-meta">
+                        <p><i class="fa fa-user"></i><a href="">Admin</a></p>
+                        <p><i class="fa fa-folder"></i><a href="">Interior</a></p>
+                        <p><i class="fa fa-comments"></i><a href="">5 Komentar</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Blog End -->
+    </div>
+</div>
+<!-- Blog End -->
 
-        
-        <!-- Footer Start -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-contact">
-                            <h2>Get In Touch</h2>
-                            <p><i class="fa fa-map-marker-alt"></i>Jalan Lada Ujung III, Rajabasa, Bandar Lampung</p>
-                            <p><i class="fa fa-phone-alt"></i>+62 857-5881-0007</p>
-                            <p><i class="fa fa-envelope"></i>blynkcarwash@gmail.com</p>
-                            <div class="footer-social">
-                                <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn" href=""><i class="fab fa-youtube"></i></a>
-                                <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-link">
-                            <h2>Popular Links</h2>
-                            <a href="">About Us</a>
-                            <a href="">Contact Us</a>
-                            <a href="">Our Service</a>
-                            <a href="">Service Points</a>
-                            <a href="">Pricing Plan</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-link">
-                            <h2>Useful Links</h2>
-                            <a href="">Terms of use</a>
-                            <a href="">Privacy policy</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
-                        </div>
+<!-- Footer Mulai -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-contact">
+                    <h2>Hubungi Kami</h2>
+                    <p><i class="fa fa-map-marker-alt"></i>Jalan Lada Ujung III, Rajabasa, Bandar Lampung</p>
+                    <p><i class="fa fa-phone-alt"></i>+62 857-5881-0007</p>
+                    <p><i class="fa fa-envelope"></i>blynkcarwash@gmail.com</p>
+                    <div class="footer-social">
+                        <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="container copyright">
-                <p>&copy; <a href="#">BLYNK CAR-WASH</a>, All Right Reserved. Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Tautan Populer</h2>
+                    <a href="">Tentang Kami</a>
+                    <a href="">Hubungi Kami</a>
+                    <a href="">Layanan Kami</a>
+                    <a href="">Titik Layanan</a>
+                    <a href="">Paket Harga</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Tautan Berguna</h2>
+                    <a href="">Syarat Penggunaan</a>
+                    <a href="">Kebijakan Privasi</a>
+                    <a href="">Cookies</a>
+                    <a href="">Bantuan</a>
+                    <a href="">FAQ</a>
+                </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+    <div class="container copyright">
+        <p>&copy; <a href="#">BLYNK CAR-WASH</a>, Hak Cipta Dilindungi. Desain oleh <a href="https://htmlcodex.com">HTML Codex</a></p>
+    </div>
+</div>
+<!-- Footer Selesai -->
 
-        
-        <!-- Back to top button -->
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
 
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+<!-- Tombol Kembali ke Atas -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+<!-- Pre Loader -->
+<div id="loader" class="show">
+    <div class="loader"></div>
+</div>
+
+<!-- Pustaka JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+
+<!-- File Javascript Kontak -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Javascript Template -->
+<script src="js/main.js"></script>
+
     </body>
 </html>
