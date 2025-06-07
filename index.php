@@ -1,87 +1,102 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>BLYNK CAR-WASH</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
+<head>
+    <meta charset="utf-8">
+    <title>BLYNK CAR-WASH</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-        
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-        <form action="request_submit.php" method="post">
-  <!-- input name, email, description -->
-</form>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-    </head>
+<body>
+  <!-- Top Bar Start -->
+  <div class="top-bar">
+      <div class="container">
+          <div class="row align-items-center">
+              <!-- Logo -->
+              <div class="col-lg-4 col-md-12">
+                  <div class="logo">
+                      <a href="index.php">
+                          <h1>Blynk<span>CarWash</span></h1>
+                      </a>
+                  </div>
+              </div>
 
-    <body>
-        <!-- Top Bar Start -->
-        <div class="top-bar">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="logo">
-                            <a href="index.html">
-                                <h1>Blynk<span>CarWash</span></h1>
-                                <!-- <img src="img/logo.jpg" alt="Logo"> -->
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="top-bar-item">
-                                    <div class="top-bar-icon">
-                                        <i class="far fa-clock"></i>
-                                    </div>
-                                    <div class="top-bar-text">
-                                        <h3>Opening Hour</h3>
-                                        <p>Mon - Fri, 8:00 - 9:00</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="top-bar-item">
-                                    <div class="top-bar-icon">
-                                        <i class="fa fa-phone-alt"></i>
-                                    </div>
-                                    <div class="top-bar-text">
-                                        <h3>Call Us</h3>
-                                        <p>+62 857-5881-0007</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="top-bar-item">
-                                    <div class="top-bar-icon">
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <div class="top-bar-text">
-                                        <h3>Email Us</h3>
-                                        <p>blynkcarwash@gmail.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Top Bar End -->
+              <!-- Contact Info -->
+              <div class="col-lg-8 col-md-12">
+                  <div class="row">
+                      <!-- Opening Hour -->
+                      <div class="col-4">
+                          <div class="top-bar-item">
+                              <div class="top-bar-icon">
+                                  <i class="far fa-clock"></i>
+                              </div>
+                              <div class="top-bar-text">
+                                  <h3>Opening Hour</h3>
+                                  <p>Mon - Fri, 8:00 - 9:00</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Call Us -->
+                      <div class="col-4">
+                          <div class="top-bar-item">
+                              <div class="top-bar-icon">
+                                  <i class="fa fa-phone-alt"></i>
+                              </div>
+                              <div class="top-bar-text">
+                                  <h3>Call Us</h3>
+                                  <p>+62 857-5881-0007</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Email Us -->
+                      <div class="col-4">
+                          <div class="top-bar-item d-flex align-items-center justify-content-between">
+                              <div class="d-flex">
+                                  <div class="top-bar-icon mr-2">
+                                      <i class="far fa-envelope"></i>
+                                  </div>
+                                  <div class="top-bar-text">
+                                      <h3>Email Us</h3>
+                                      <p>blynkcarwash@gmail.com</p>
+                                  </div>
+                              </div>
+                               <?php if (isset($_SESSION['username'])): ?>
+                                <a href="logout.php" class="btn btn-danger btn-sm ml-5">Logout</a>
+                            <?php else: ?>
+                                <a href="login.php" class="btn btn-primary btn-sm ml-5">Login</a>
+                            <?php endif; ?>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Top Bar End -->
 
         <!-- Nav Bar Start -->
         <div class="nav-bar">
@@ -449,7 +464,7 @@
                     <div class="col-lg-5">
                         <div class="location-form">
                             <h3>Request for a car wash</h3>
-                            <form>
+                            <form method = "post" action= "request_submit.php">
                                 <div class="control-group">
                                     <input type="text" class="form-control" placeholder="Name" required="required" />
                                 </div>

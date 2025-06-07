@@ -1,57 +1,58 @@
 <?php
-<<<<<<< HEAD
 $host = "localhost";
-$user = "root";
-$pass = "";
-$db = "blynkcarwash";
+$username = "root";
+$password = "";
+$database = "cuci_mobil";
 
 // Koneksi ke database
-$conn = new mysqli($host, $user, $pass, $db);
+$conn = new mysqli($host, $username, $password, $database);
 
 // Cek koneksi
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
 
-// Ambil data dari form
-$nama = $_POST['nama_pelanggan'];
-$plat = $_POST['nomor_plat'];
-$layanan = $_POST['jenis_layanan'];
-$tanggal = $_POST['tanggal'];
-$jam = $_POST['jam'];
+// Cek apakah form dikirim dengan method POST
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Ambil data dari form dengan proteksi dasar (trim)
+    $nama_pelanggan = trim($_POST['nama_pelanggan'] ?? '');
+    $nomor_plat = trim($_POST['nomor_plat'] ?? '');
+    $jenis_layanan = trim($_POST['jenis_layanan'] ?? '');
+    $tanggal = trim($_POST['tanggal'] ?? '');
+    $jam = trim($_POST['jam'] ?? '');
 
-// Simpan ke database
-$sql = "INSERT INTO booking (nama_pelanggan, nomor_plat, jenis_layanan, tanggal, jam)
-        VALUES ('$nama', '$plat', '$layanan', '$tanggal', '$jam')";
+    // Validasi sederhana agar data tidak kosong (opsional)
+    if ($nama_pelanggan && $nomor_plat && $jenis_layanan && $tanggal && $jam) {
+        $sql = "INSERT INTO booking (nama_pelanggan, nomor_plat, jenis_layanan, tanggal, jam) VALUES (?, ?, ?, ?, ?)";
+        $stmt = $conn->prepare($sql);
 
-if ($conn->query($sql) === TRUE) {
-    echo "<script>alert('Booking berhasil!'); window.location.href='booking.html';</script>";
+        if (!$stmt) {
+            die("Prepare gagal: " . $conn->error);
+        }
+
+        $stmt->bind_param("sssss", $nama_pelanggan, $nomor_plat, $jenis_layanan, $tanggal, $jam);
+
+        if ($stmt->execute()) {
+            echo "<script>
+                    alert('Booking berhasil!');
+                    window.location.href = 'index.html';
+                  </script>";
+        } else {
+            echo "Error: " . $stmt->error;
+        }
+
+        $stmt->close();
+    } else {
+        echo "<script>
+                alert('Mohon isi semua data!');
+                window.history.back();
+              </script>";
+    }
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    // Kalau bukan POST langsung redirect ke halaman booking/form
+    header("Location: index.html");
+    exit;
 }
 
 $conn->close();
-=======
-include 'koneksi.php';  // koneksi ke database
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nama_pelanggan = $conn->real_escape_string($_POST['nama_pelanggan']);
-    $nomor_plat = $conn->real_escape_string($_POST['nomor_plat']);
-    $jenis_layanan = $conn->real_escape_string($_POST['jenis_layanan']);
-    $tanggal = $conn->real_escape_string($_POST['tanggal']);
-    $jam = $conn->real_escape_string($_POST['jam']);
-
-    // ID_ADMIN dibiarkan NULL karena booking belum ditangani admin
-    $sql = "INSERT INTO booking (ID_ADMIN, NAMA_PELANGGAN, NOMOR_PLAT, JENIS_LAYANAN, TANGGAL, JAM, STATUS) 
-            VALUES (NULL, '$nama_pelanggan', '$nomor_plat', '$jenis_layanan', '$tanggal', '$jam', 'menunggu')";
-
-    if ($conn->query($sql) === TRUE) {
-        echo "✅ Booking berhasil disimpan!";
-    } else {
-        echo "❌ Error: " . $conn->error;
-    }
-} else {
-    echo "Metode bukan POST.";
-}
->>>>>>> da0b24520dbcb441a05f501e1770cad3f68bf50f
 ?>
