@@ -242,36 +242,36 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <script>
- document.getElementById('waForm').addEventListener('submit', function(e) {
+  
+ <script>
+document.getElementById('waForm').addEventListener('submit', function(e) {
   e.preventDefault();
 
-  let name = document.getElementById('name').value.trim();
-  let email = document.getElementById('email').value.trim();
-  let subject = document.getElementById('subject').value.trim();
-  let message = document.getElementById('message').value.trim();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const subject = document.getElementById('subject').value.trim();
+  const message = document.getElementById('message').value.trim();
 
   if (!name || !email || !subject || !message) {
-    alert('Mohon lengkapi semua kolom!');
+    alert("Mohon isi semua kolom terlebih dahulu.");
     return;
   }
 
-  let text = `Halo BlynkCarWash,
-Saya ingin memesan layanan dengan detail berikut:
-Nama: ${name}
-Email: ${email}
-Subjek: ${subject}
-Pesan: ${message}
+  const phoneNumber = "6285758810007";
 
-Terima kasih! 🙏`;
+  // Buat pesan dengan newline \n, tanpa encode manual
+  const rawMessage = 
+    "Formulir Kontak - Blynk Carwash\n\n" +
+    "Nama: " + name + "\n" +
+    "Email: " + email + "\n" +
+    "Subjek: " + subject + "\n" +
+    "Pesan: " + message + "\n\n" +
+    "Terima kasih!";
 
-  let url = `https://wa.me/6285758810007?text=${encodeURIComponent(text)}`;
+  // encodeURIComponent sekali untuk keseluruhan pesan
+  const whatsappMessage = encodeURIComponent(rawMessage);
 
-  // Debug URL
-  console.log(url);
-
-  window.open(url, '_blank');
-
-  // Optional: reset form setelah submit
-  this.reset();
+  const waUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+  window.open(waUrl, '_blank');
 });
+</script>
