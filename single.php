@@ -104,7 +104,6 @@
                             <a href="blog.html" class="dropdown-item">Blog</a>
                             <a href="single.html" class="dropdown-item">Detail</a>
                             <a href="team.html" class="dropdown-item">Tim Kami</a>
-                            <a href="booking.html" class="dropdown-item">Jadwal Booking</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Kontak</a>
