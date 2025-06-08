@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($stmt->execute()) {
             echo "<script>
                     alert('Booking berhasil!');
-                    window.location.href = 'index.html';
+                    window.location.href = 'index.php';
                   </script>";
         } else {
             echo "Error: " . $stmt->error;

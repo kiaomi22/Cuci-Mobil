@@ -499,68 +499,44 @@ session_start();
             <div class="col-lg-3 col-md-6">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/team-1.jpg" alt="Foto Tim">
+                        <img src="img/team-1.png" alt="Foto Tim">
                     </div>
                     <div class="team-text">
                         <h2>Aleea Carisa</h2>
-                        <p>Insinyur</p>
-                        <div class="team-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </div>
+                        <p>Teknisi</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/team-2.jpg" alt="Foto Tim">
+                        <img src="img/team-2.png" alt="Foto Tim">
                     </div>
                     <div class="team-text">
                         <h2>Febby Yolanda</h2>
-                        <p>Insinyur</p>
-                        <div class="team-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </div>
+                        <p>Teknisi</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/team-3.jpg" alt="Foto Tim">
+                        <img src="img/team-3.png" alt="Foto Tim">
                     </div>
                     <div class="team-text">
                         <h2>Nur Aila Zahra</h2>
                         <p>Pekerja</p>
-                        <div class="team-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/team-4.jpg" alt="Foto Tim">
+                        <img src="img/team-4.png" alt="Foto Tim">
                     </div>
                     <div class="team-text">
                         <h2>Zaskia Jihan Nabila</h2>
                         <p>Pekerja</p>
-                        <div class="team-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
