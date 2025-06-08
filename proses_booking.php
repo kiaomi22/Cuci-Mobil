@@ -18,12 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nama_pelanggan = trim($_POST['nama_pelanggan'] ?? '');
     $nomor_plat = trim($_POST['nomor_plat'] ?? '');
     $jenis_layanan = trim($_POST['jenis_layanan'] ?? '');
+    $tempat_cuci = trim($_POST['tempat_cuci'] ?? '');
     $tanggal = trim($_POST['tanggal'] ?? '');
     $jam = trim($_POST['jam'] ?? '');
 
     // Validasi sederhana agar data tidak kosong (opsional)
     if ($nama_pelanggan && $nomor_plat && $jenis_layanan && $tanggal && $jam) {
-        $sql = "INSERT INTO booking (nama_pelanggan, nomor_plat, jenis_layanan, tanggal, jam) VALUES (?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO booking (nama_pelanggan, nomor_plat, jenis_layanan, tempat_cuci, tanggal, jam) VALUES (?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
 
         if (!$stmt) {
