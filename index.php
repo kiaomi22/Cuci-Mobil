@@ -467,13 +467,13 @@ session_start();
                     <h3>Request Cuci Mobil</h3>
                     <form method="post" action="request_submit.php">
                         <div class="control-group">
-                            <input type="text" class="form-control" placeholder="Nama" required="required" />
+                            <input type="text" class="form-control" name="name" placeholder="Nama" required="required" />
                         </div>
                         <div class="control-group">
-                            <input type="email" class="form-control" placeholder="Email" required="required" />
+                            <input type="email" class="form-control" name="email" placeholder="Email" required="required" />
                         </div>
                         <div class="control-group">
-                            <textarea class="form-control" placeholder="Keterangan" required="required"></textarea>
+                            <textarea class="form-control" name="description" placeholder="Keterangan" required="required"></textarea>
                         </div>
                         <div>
                             <button class="btn btn-custom" type="submit">Kirim Permintaan</button>

@@ -1,37 +1,35 @@
 <?php
-session_start();
-
-// Koneksi database
+// config koneksi database
 $host = "localhost";
-$user = "root";
-$pass = "";
-$dbname = "cuci_mobil";
+$username = "root";      // sesuaikan dengan user db kamu
+$password = "";          // sesuaikan password db
+$dbname = "cuci_mobil"; // ganti dengan nama database kamu
 
-$conn = new mysqli($host, $user, $pass, $dbname);
+// buat koneksi
+$conn = new mysqli($host, $username, $password, $dbname);
+
+// cek koneksi
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
 
-// Ambil data dari form (pastikan method form POST)
+// ambil data dari form POST dan amankan
 $name = $conn->real_escape_string($_POST['name']);
 $email = $conn->real_escape_string($_POST['email']);
 $description = $conn->real_escape_string($_POST['description']);
 
-// Validasi sederhana
-if (empty($name) || empty($email) || empty($description)) {
-    echo "Data tidak boleh kosong!";
-    exit;
-}
-
-// Simpan data ke tabel
-$sql = "INSERT INTO carwash_requests (name, email, description) VALUES ('$name', '$email', '$description')";
+// query insert
+$sql = "INSERT INTO carwash_request (name, email, description) VALUES ('$name', '$email', '$description')";
 
 if ($conn->query($sql) === TRUE) {
-    // Redirect atau tampil pesan sukses
-    header("Location: thank_you.php"); // contoh halaman setelah submit
+    // jika sukses, tampilkan alert dan redirect
+    echo "<script>
+            alert('Pesan berhasil dikirim!');
+            window.location.href = 'index.php';
+          </script>";
     exit;
 } else {
-    echo "Error: " . $conn->error;
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();

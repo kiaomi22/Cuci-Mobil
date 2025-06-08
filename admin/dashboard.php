@@ -122,6 +122,7 @@ $latest = $conn->query("SELECT * FROM booking ORDER BY created_at DESC LIMIT 5")
     <h2>Admin Panel</h2>
     <a href="dashboard.php">🏠 Dashboard</a>
     <a href="booking_list.php">📋 Daftar Booking</a>
+    <a href="admin_requests.php">📩 Request & Saran Pelanggan</a>
     <a href="logout.php">🔒 Logout</a>
 </div>
 
