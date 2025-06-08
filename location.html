@@ -118,166 +118,165 @@
         
        
        <!-- Lokasi Mulai -->
-<div class="location">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="section-header text-left">
-                    <p>Titik Cuci</p>
-                    <h2>Titik Cuci & Perawatan Mobil</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="location-item">
-                            <i class="fa fa-map-marker-alt"></i>
-                            <div class="location-text">
-                                <h3>Cabang Utama Car Wash</h3>
-                                <p>Jalan Lada Ujung III, Rajabasa, Bandar Lampung</p>
-                                <p><strong>Hubungi:</strong>+62 857-5881-0007</p>
+       <div class="location">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="section-header text-left">
+                        <p>Titik Cuci</p>
+                        <h2>Titik Cuci & Perawatan Mobil</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="location-item">
+                                <i class="fa fa-map-marker-alt"></i>
+                                <div class="location-text">
+                                    <h3>Cabang Utama Car Wash</h3>
+                                    <p>Jalan Lada Ujung III, Rajabasa, Bandar Lampung</p>
+                                    <p><strong>Hubungi:</strong>+62 857-5881-0007</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="location-item">
+                                <i class="fa fa-map-marker-alt"></i>
+                                <div class="location-text">
+                                    <h3>Cabang 1 Car Wash</h3>
+                                    <p>Jl. Durian, Sukarame, Bandar Lampung</p>
+                                    <p><strong>Hubungi:</strong>+62 812-7160-7722</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="location-item">
+                                <i class="fa fa-map-marker-alt"></i>
+                                <div class="location-text">
+                                    <h3>Cabang 2 Car Wash</h3>
+                                    <p>Perumahan Abdi Negara, Sukabumi, Bandar Lampung</p>
+                                    <p><strong>Hubungi:</strong>+62 851-5519-9375</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="location-item">
+                                <i class="fa fa-map-marker-alt"></i>
+                                <div class="location-text">
+                                    <h3>Cabang 3 Car Wash</h3>
+                                    <p>Jl. Pulau Belitung, Sukabumi, Bandar Lampung</p>
+                                    <p><strong>Hubungi:</strong>+62 822-1071-6261</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="location-item">
-                            <i class="fa fa-map-marker-alt"></i>
-                            <div class="location-text">
-                                <h3>Cabang 1 Car Wash</h3>
-                                <p>Jl. Durian, Sukarame, Bandar Lampung</p>
-                                <p><strong>Hubungi:</strong>+62 812-7160-7722</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="location-item">
-                            <i class="fa fa-map-marker-alt"></i>
-                            <div class="location-text">
-                                <h3>Cabang 2 Car Wash</h3>
-                                <p>Perumahan Abdi Negara, Sukabumi, Bandar Lampung</p>
-                                <p><strong>Hubungi:</strong>+62 851-5519-9375</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="location-item">
-                            <i class="fa fa-map-marker-alt"></i>
-                            <div class="location-text">
-                                <h3>Cabang 3 Car Wash</h3>
-                                <p>Jl. Pulau Belitung, Sukabumi, Bandar Lampung</p>
-                                <p><strong>Hubungi:</strong>+62 822-1071-6261</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <div class="col-lg-5">
-    <form action="proses_booking.php" method="POST">
-        <div class="control-group">
-            <input type="text" name="nama_pelanggan" class="form-control" placeholder="Nama" required />
-        </div>
-        <div class="control-group">
-            <input type="text" name="nomor_plat" class="form-control" placeholder="Nomor Plat" required />
-        </div>
-        <div class="control-group">
-            <select name="jenis_layanan" class="form-control" required>
-                <option value="" disabled selected>Pilih jenis layanan</option>
-                <option value="Cuci Luar">Cuci Luar</option>
-                <option value="Cuci Dalam">Cuci Dalam</option>
-                <option value="Cuci Lengkap">Cuci Lengkap</option>
-            </select>
-        </div>
-        <div class="control-group">
-            <select name="tempat_cuci" class="form-control" required>
-                <option value="" disabled selected>Pilih Lokasi Cuci</option>
-                <option value="Cabang Utama Car Wash">Cabang Utama Car Wash</option>
-                <option value="Cabang 1 Car Wash">Cabang 1 Car Wash</option>
-                <option value="Cabang 2 Car Wash">Cabang 2 Car Wash</option>
-                <option value="Cabang 3 Car Wash">Cabang 3 Car Wash</option>
-            </select>
-        </div>
-        <div class="control-group">
-            <input type="date" name="tanggal" class="form-control" required />
-        </div>
-        <div class="control-group">
-            <input type="time" name="jam" class="form-control" required />
-        </div>
-        <div>
-            <button class="btn btn-custom" type="submit">Pesan</button>
-        </div>
-    </form>
-</div>
-<!-- Lokasi Selesai -->
-
-        
-        
-<!-- Footer Mulai -->
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-contact">
-                    <h2>Hubungi Kami</h2>
-                    <p><i class="fa fa-map-marker-alt"></i>Jalan Lada Ujung III, Rajabasa, Bandar Lampung</p>
-                    <p><i class="fa fa-phone-alt"></i>+62 857-5881-0007</p>
-                    <p><i class="fa fa-envelope"></i>blynkcarwash@gmail.com</p>
-                    <div class="footer-social">
-                        <a class="btn" href="https://x.com/blynkcarwash"><i class="fab fa-twitter"></i></a>
-                        <a class="btn" href="https://www.facebook.com/blynkcarwash"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn" href="https://www.youtube.com/blynkcarwash"><i class="fab fa-youtube"></i></a>
-                        <a class="btn" href="https://www.instagram.com/blynkcarwash"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-link">
-                    <h2>Tautan Populer</h2>
-                    <a href="">Tentang Kami</a>
-                    <a href="">Hubungi Kami</a>
-                    <a href="">Layanan Kami</a>
-                    <a href="">Titik Layanan</a>
-                    <a href="">Paket Harga</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-link">
-                    <h2>Tautan Berguna</h2>
-                    <a href="">Syarat Penggunaan</a>
-                    <a href="">Kebijakan Privasi</a>
-                    <a href="">Cookies</a>
-                    <a href="">Bantuan</a>
-                    <a href="">FAQ</a>
+                <div class="col-lg-5">
+                    <form action="proses_booking.php" method="POST">
+                        <div class="control-group">
+                            <input type="text" name="nama_pelanggan" class="form-control" placeholder="Nama" required />
+                        </div>
+                        <div class="control-group">
+                            <input type="text" name="nomor_plat" class="form-control" placeholder="Nomor Plat" required />
+                        </div>
+                        <div class="control-group">
+                            <select name="jenis_layanan" class="form-control" required>
+                                <option value="" disabled selected>Pilih jenis layanan</option>
+                                <option value="Cuci Luar">Cuci Luar</option>
+                                <option value="Cuci Dalam">Cuci Dalam</option>
+                                <option value="Cuci Lengkap">Cuci Lengkap</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <select name="tempat_cuci" class="form-control" required>
+                                <option value="" disabled selected>Pilih Lokasi Cuci</option>
+                                <option value="Cabang Utama Car Wash">Cabang Utama Car Wash</option>
+                                <option value="Cabang 1 Car Wash">Cabang 1 Car Wash</option>
+                                <option value="Cabang 2 Car Wash">Cabang 2 Car Wash</option>
+                                <option value="Cabang 3 Car Wash">Cabang 3 Car Wash</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <input type="date" name="tanggal" class="form-control" required />
+                        </div>
+                        <div class="control-group">
+                            <input type="time" name="jam" class="form-control" required />
+                        </div>
+                        <div>
+                            <button class="btn btn-custom" type="submit">Pesan</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container copyright">
-        <p>&copy; <a href="#">BLYNK CAR-WASH</a>, Hak Cipta Dilindungi. Desain oleh <a href="https://htmlcodex.com">HTML Codex</a></p>
+
+<!-- Footer Start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Hubungi Kami</h2>
+                        <p><i class="fa fa-map-marker-alt"></i>Jalan Lada Ujung III, Rajabasa, Bandar Lampung</p>
+                        <p><i class="fa fa-phone-alt"></i>+62 857-5881-0007</p>
+                        <p><i class="fa fa-envelope"></i>blynkcarwash@gmail.com</p>
+                        <div class="footer-social">
+                            <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Tautan Populer</h2>
+                        <a href="">Tentang Kami</a>
+                        <a href="">Kontak Kami</a>
+                        <a href="">Layanan Kami</a>
+                        <a href="">Titik Layanan</a>
+                        <a href="">Paket Harga</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Tautan Bermanfaat</h2>
+                        <a href="">Syarat Penggunaan</a>
+                        <a href="">Kebijakan Privasi</a>
+                        <a href="">Cookies</a>
+                        <a href="">Bantuan</a>
+                        <a href="">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; <a href="#">BLYNK CAR-WASH</a>, Hak Cipta Dilindungi. Desain oleh <a href="https://htmlcodex.com">HTML Codex</a></p>
+        </div>
     </div>
-</div>
-<!-- Footer Selesai -->
+    <!-- Footer End -->
 
+    <!-- Tombol Kembali ke Atas -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-<!-- Tombol Kembali ke Atas -->
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
 
-<!-- Pre Loader -->
-<div id="loader" class="show">
-    <div class="loader"></div>
-</div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
 
-<!-- Pustaka JavaScript -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
 
-<!-- File Javascript Kontak -->
-<script src="mail/jqBootstrapValidation.min.js"></script>
-<script src="mail/contact.js"></script>
-
-<!-- Javascript Template -->
-<script src="js/main.js"></script>
-
-    </body>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
 </html>
