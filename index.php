@@ -114,7 +114,7 @@ session_start();
                     <a href="service.html" class="nav-item nav-link">Layanan</a>
                     <a href="price.html" class="nav-item nav-link">Harga</a>
                     <a href="location.html" class="nav-item nav-link">Lokasi Cuci</a>
-                    <a href="cek_booking_user.php" class="nav-item nav-link">Cek Pesanan</a>
+                    <a href="cek_booking_user.html" class="nav-item nav-link">Cek Pesanan</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Halaman Lain</a>
                         <div class="dropdown-menu">
