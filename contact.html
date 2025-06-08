@@ -159,27 +159,23 @@
             <div class="col-md-7">
                 <div class="contact-form">
                     <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <form id="waForm">
                         <div class="control-group">
-                            <input type="text" class="form-control" id="name" placeholder="Nama Anda" required="required" data-validation-required-message="Masukkan nama Anda" />
-                            <p class="help-block text-danger"></p>
+                          <input type="text" class="form-control" id="name" placeholder="Nama Anda" required />
                         </div>
                         <div class="control-group">
-                            <input type="email" class="form-control" id="email" placeholder="Email Anda" required="required" data-validation-required-message="Masukkan email Anda" />
-                            <p class="help-block text-danger"></p>
+                          <input type="email" class="form-control" id="email" placeholder="Email Anda" required />
                         </div>
                         <div class="control-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subjek" required="required" data-validation-required-message="Masukkan subjek" />
-                            <p class="help-block text-danger"></p>
+                          <input type="text" class="form-control" id="subject" placeholder="Subjek" required />
                         </div>
                         <div class="control-group">
-                            <textarea class="form-control" id="message" placeholder="Pesan" required="required" data-validation-required-message="Masukkan pesan Anda"></textarea>
-                            <p class="help-block text-danger"></p>
+                          <textarea class="form-control" id="message" placeholder="Pesan" required></textarea>
                         </div>
                         <div>
-                            <button class="btn btn-custom" type="submit" id="sendMessageButton">Kirim Pesan</button>
+                          <button class="btn btn-custom" type="submit">Kirim via WhatsApp</button>
                         </div>
-                    </form>
+                      </form>                      
                 </div>
             </div>
             <div class="col-md-12">
@@ -261,5 +257,40 @@
 <!-- Javascript Template -->
 <script src="js/main.js"></script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contactForm");
+  
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Stop submit default
+  
+        // Ambil nilai dari form
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+  
+        // Validasi sederhana
+        if (!name || !email || !subject || !message) {
+          alert("Harap isi semua field!");
+          return;
+        }
+  
+        // Format isi pesan untuk WhatsApp
+        const waNumber = "6285758810007";
+        const text = `Halo! Saya *${name}* ingin bertanya.%0A
+  Email: ${email}%0A
+  Subjek: ${subject}%0A
+  Pesan: ${message}`;
+  
+        // Bikin link WhatsApp
+        const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
+  
+        // Buka WhatsApp di tab baru
+        window.open(waLink, "_blank");
+      });
+    });
+  </script>
+  
     </body>
 </html>
