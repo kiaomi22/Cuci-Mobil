@@ -170,35 +170,41 @@
                 </div>
             </div>
             <div class="col-lg-5">
-                <form action="proses_booking.php" method="POST">
-                    <div class="control-group">
-                        <input type="text" name="nama_pelanggan" class="form-control" placeholder="Nama" required />
-                    </div>
-                    <div class="control-group">
-                        <input type="text" name="nomor_plat" class="form-control" placeholder="Nomor Plat" required />
-                    </div>
-                    <div class="control-group">
-                        <select name="jenis_layanan" class="form-control" required>
-                            <option value="" disabled selected>Pilih jenis layanan</option>
-                            <option value="Cuci Luar">Cuci Luar</option>
-                            <option value="Cuci Dalam">Cuci Dalam</option>
-                            <option value="Cuci Lengkap">Cuci Lengkap</option>
-                        </select>
-                    </div>
-                    <div class="control-group">
-                        <input type="date" name="tanggal" class="form-control" required />
-                    </div>
-                    <div class="control-group">
-                        <input type="time" name="jam" class="form-control" required />
-                    </div>
-                    <div>
-                        <button class="btn btn-custom" type="submit">Pesan</button>
-                    </div>
-                </form>
-            </div>
+    <form action="proses_booking.php" method="POST">
+        <div class="control-group">
+            <input type="text" name="nama_pelanggan" class="form-control" placeholder="Nama" required />
         </div>
-    </div>
-</div> 
+        <div class="control-group">
+            <input type="text" name="nomor_plat" class="form-control" placeholder="Nomor Plat" required />
+        </div>
+        <div class="control-group">
+            <select name="jenis_layanan" class="form-control" required>
+                <option value="" disabled selected>Pilih jenis layanan</option>
+                <option value="Cuci Luar">Cuci Luar</option>
+                <option value="Cuci Dalam">Cuci Dalam</option>
+                <option value="Cuci Lengkap">Cuci Lengkap</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <select name="tempat_cuci" class="form-control" required>
+                <option value="" disabled selected>Pilih Lokasi Cuci</option>
+                <option value="Cabang Utama Car Wash">Cabang Utama Car Wash</option>
+                <option value="Cabang 1 Car Wash">Cabang 1 Car Wash</option>
+                <option value="Cabang 2 Car Wash">Cabang 2 Car Wash</option>
+                <option value="Cabang 3 Car Wash">Cabang 3 Car Wash</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <input type="date" name="tanggal" class="form-control" required />
+        </div>
+        <div class="control-group">
+            <input type="time" name="jam" class="form-control" required />
+        </div>
+        <div>
+            <button class="btn btn-custom" type="submit">Pesan</button>
+        </div>
+    </form>
+</div>
 <!-- Lokasi Selesai -->
 
         
