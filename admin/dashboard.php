@@ -158,6 +158,7 @@ $latest = $conn->query("SELECT * FROM booking ORDER BY created_at DESC LIMIT 5")
                 <th>Nama Pelanggan</th>
                 <th>Nomor Plat</th>
                 <th>Jenis Layanan</th>
+                <th>Tempat Cuci </th>
                 <th>Tanggal</th>
                 <th>Jam</th>
                 <th>Status</th>
@@ -170,6 +171,7 @@ $latest = $conn->query("SELECT * FROM booking ORDER BY created_at DESC LIMIT 5")
                     <td><?= htmlspecialchars($row['nama_pelanggan']) ?></td>
                     <td><?= htmlspecialchars($row['nomor_plat']) ?></td>
                     <td><?= htmlspecialchars($row['jenis_layanan']) ?></td>
+                    <td><?= htmlspecialchars($row['tempat_cuci']) ?></td>
                     <td><?= htmlspecialchars($row['tanggal']) ?></td>
                     <td><?= htmlspecialchars($row['jam']) ?></td>
                     <td><?= htmlspecialchars($row['status']) ?></td>
