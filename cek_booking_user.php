@@ -1,18 +1,7 @@
 <?php
 include 'koneksi.php';
-
-// Cek apakah user sudah login
-if (!isset($_SESSION['user_id'])) {
-    echo "<script>
-        alert('Silakan login untuk mengakses halaman ini.');
-        window.location.href = 'login.php';
-    </script>";
-    exit();
-}
-
 require_once 'header.php';
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -74,18 +63,25 @@ require_once 'header.php';
                             <h2 class="mb-0">Cek Status Booking</h2>
                         </div>
                         <div class="card-body">
-                            <!-- Form input nama dan plat -->
-                            <form method="POST" action="">
-                                <div class="form-group mb-3">
-                                    <label for="nama_pelanggan">Nama Pelanggan:</label>
-                                    <input type="text" name="nama_pelanggan" id="nama_pelanggan" class="form-control" placeholder="Contoh: Jihan" required>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <label for="nomor_plat">Nomor Plat Kendaraan:</label>
-                                    <input type="text" name="nomor_plat" id="nomor_plat" class="form-control" placeholder="Contoh: B1234XYZ" required>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Cek Status</button>
-                            </form>
+                           <form method="POST" action="" id="formBooking">
+    <div class="form-group mb-3">
+        <label for="nama_pelanggan">Nama Pelanggan:</label>
+        <input type="text" name="nama_pelanggan" id="nama_pelanggan" class="form-control" placeholder="Contoh: Jihan" required>
+    </div>
+    <div class="form-group mb-3">
+        <label for="nomor_plat">Nomor Plat Kendaraan:</label>
+        <input type="text" name="nomor_plat" id="nomor_plat" class="form-control" placeholder="Contoh: B1234XYZ" required>
+    </div>
+    
+    <?php if (isset($_SESSION['user_id'])): ?>
+        <!-- Jika sudah login, aktifkan tombol -->
+        <button type="submit" class="btn btn-primary">Cek Status</button>
+    <?php else: ?>
+        <!-- Jika belum login, tampilkan tombol palsu -->
+        <button type="button" class="btn btn-primary" onclick="showLoginAlert()">Cek Status</button>
+    <?php endif; ?>
+</form>
+
     
                             <!-- PHP logic dan hasil -->
                             <?php
@@ -190,6 +186,13 @@ require_once 'header.php';
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+function showLoginAlert() {
+    alert("Silakan login terlebih dahulu untuk mengecek status booking.");
+}
+</script>
+
     
 </body>
 </html>
