@@ -42,20 +42,20 @@ require_once 'header.php';
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
                     <a href="index.php" class="nav-item nav-link">Beranda</a>
-                    <a href="about.html" class="nav-item nav-link">Tentang</a>
-                    <a href="service.html" class="nav-item nav-link">Layanan</a>
-                    <a href="price.html" class="nav-item nav-link">Harga</a>
-                    <a href="location.html" class="nav-item nav-link">Lokasi Cuci</a>
+                    <a href="about.php" class="nav-item nav-link">Tentang</a>
+                    <a href="layan.php" class="nav-item nav-link">Layanan</a>
+                    <a href="harga.php" class="nav-item nav-link">Harga</a>
+                    <a href="lokasi.php" class="nav-item nav-link">Lokasi Cuci</a>
                     <a href="cek_booking_user.php" class="nav-item nav-link">Cek Pesanan</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Halaman Lain</a>
                         <div class="dropdown-menu">
-                            <a href="blog.html" class="dropdown-item">Blog</a>
+                            <a href="blog.php" class="dropdown-item">Blog</a>
                             <a href="single.php" class="dropdown-item">Detail</a>
-                            <a href="team.html" class="dropdown-item">Tim Kami</a>
+                            <a href="team.php" class="dropdown-item">Tim Kami</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Kontak</a>
+                    <a href="contact.php" class="nav-item nav-link">Kontak</a>
                 </div>
                 <div class="ml-auto">
                     <a class="btn btn-custom" href="location.html">Pesan Sekarang</a>
