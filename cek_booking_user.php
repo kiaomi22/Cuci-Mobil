@@ -1,7 +1,18 @@
 <?php
 include 'koneksi.php';
+
+// Cek apakah user sudah login
+if (!isset($_SESSION['user_id'])) {
+    echo "<script>
+        alert('Silakan login untuk mengakses halaman ini.');
+        window.location.href = 'login.php';
+    </script>";
+    exit();
+}
+
 require_once 'header.php';
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

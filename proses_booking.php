@@ -1,4 +1,8 @@
 <?php
+session_start();
+$is_logged_in = isset($_SESSION['user_id']); // Misalnya menggunakan 'user_id' sebagai identifikasi login
+?>
+
 $host = "localhost";
 $username = "root";
 $password = "";
