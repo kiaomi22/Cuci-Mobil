@@ -1,4 +1,5 @@
 <?php
+include 'koneksi.php';
 require_once 'header.php';
 ?>
 
@@ -151,7 +152,7 @@ require_once 'header.php';
                             <input type="time" name="jam" class="form-control" required />
                         </div>
                         <div>
-                             <button class="btn btn-custom" type="button" onclick="checkLogin()">Pesan</button>
+                        <button class="btn btn-custom" type="submit">Pesan</button>      
                         </div>
                     </form>
                 </div>
