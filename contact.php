@@ -107,25 +107,25 @@ require_once 'header.php';
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <div class="contact-form">
-                        <div id="success"></div>
-                        <form id="waForm">
-                            <div class="control-group">
-                              <input type="text" class="form-control" id="name" placeholder="Nama Anda" required />
-                            </div>
-                            <div class="control-group">
-                              <input type="email" class="form-control" id="email" placeholder="Email Anda" required />
-                            </div>
-                            <div class="control-group">
-                              <input type="text" class="form-control" id="subject" placeholder="Subjek Pertanyaan" required />
-                            </div>
-                            <div class="control-group">
-                              <textarea class="form-control" id="message" placeholder="Tulis Pertanyaan Anda" required></textarea>
-                            </div>
-                            <div>
-                              <button class="btn btn-custom" type="submit">Kirim via WhatsApp</button>
-                            </div>
-                        </form>                      
+                   <div id="success"></div>
+<form id="waForm">
+    <div class="control-group">
+        <input type="text" class="form-control" id="name" placeholder="Nama Anda" required />
+    </div>
+    <div class="control-group">
+        <input type="email" class="form-control" id="email" placeholder="Email Anda" required />
+    </div>
+    <div class="control-group">
+        <input type="text" class="form-control" id="subject" placeholder="Subjek Pertanyaan" required />
+    </div>
+    <div class="control-group">
+        <textarea class="form-control" id="message" placeholder="Tulis Pertanyaan Anda" required rows="8" style="resize: vertical;"></textarea>
+    </div>
+    <div>
+        <button class="btn btn-custom" id="submitBtn" type="submit">Kirim via WhatsApp</button>
+    </div>
+</form>
+                    
                     </div>
                 </div>
                 <div class="col-md-12 mt-4">
@@ -193,35 +193,40 @@ require_once 'header.php';
     <script src="js/main.js"></script>
 
   
- <script>
-document.getElementById('waForm').addEventListener('submit', function(e) {
-  e.preventDefault();
+<!-- WA Script -->
+   <script>
+    document.getElementById('waForm').addEventListener('submit', function(e) {
+        e.preventDefault();
 
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const subject = document.getElementById('subject').value.trim();
-  const message = document.getElementById('message').value.trim();
+        <?php if (!isset($_SESSION['username'])): ?>
+            alert("Silakan login terlebih dahulu untuk mengirim pesan.");
+            return;
+        <?php endif; ?>
 
-  if (!name || !email || !subject || !message) {
-    alert("Mohon isi semua kolom terlebih dahulu.");
-    return;
-  }
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
 
-  const phoneNumber = "6285758810007";
+        if (!name || !email || !subject || !message) {
+            alert("Mohon isi semua kolom terlebih dahulu.");
+            return;
+        }
 
-  // Buat pesan dengan newline \n, tanpa encode manual
-  const rawMessage = 
-    "Formulir Kontak - Blynk Carwash\n\n" +
-    "Nama: " + name + "\n" +
-    "Email: " + email + "\n" +
-    "Subjek: " + subject + "\n" +
-    "Pesan: " + message + "\n\n" +
-    "Terima kasih!";
+        const phoneNumber = "6285758810007";
+        const rawMessage = 
+            "Formulir Kontak - Blynk Carwash\n\n" +
+            "Nama: " + name + "\n" +
+            "Email: " + email + "\n" +
+            "Subjek: " + subject + "\n" +
+            "Pesan: " + message + "\n\n" +
+            "Terima kasih!";
 
-  // encodeURIComponent sekali untuk keseluruhan pesan
-  const whatsappMessage = encodeURIComponent(rawMessage);
-
-  const waUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
-  window.open(waUrl, '_blank');
-});
+        const whatsappMessage = encodeURIComponent(rawMessage);
+        const waUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+        window.open(waUrl, '_blank');
+    });
 </script>
+</body>
+</html>
+
