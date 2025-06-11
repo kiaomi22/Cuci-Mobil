@@ -58,7 +58,7 @@ require_once 'header.php';
                     <a href="contact.php" class="nav-item nav-link">Kontak</a>
                 </div>
                 <div class="ml-auto">
-                    <a class="btn btn-custom" href="booking.php">Pesan Sekarang</a>
+                <a class="btn btn-custom" href="lokasi.php">Pesan Sekarang</a>
                 </div>
             </div>
         </nav>

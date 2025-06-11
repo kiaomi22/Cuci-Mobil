@@ -57,7 +57,7 @@ require_once 'header.php';
                     <a href="contact.php" class="nav-item nav-link">Kontak</a>
                 </div>
                     <div class="ml-auto">
-                    <a class="btn btn-custom" href="booking.html">Pesan Sekarang</a>
+                    <a class="btn btn-custom" href="lokasi.php">Pesan Sekarang</a>
                 </div>
             </div>
         </nav>
@@ -683,18 +683,18 @@ require_once 'header.php';
 <!-- Javascript Template -->
 <script src="js/main.js"></script>
 
-<script>
-    function checkLogin() {
-        var isLoggedIn = <?php echo json_encode($is_logged_in); ?>;
+    <script>
+        function checkLogin() {
+            var isLoggedIn = <?php echo json_encode($is_logged_in); ?>;
 
-        if (isLoggedIn) {
-            document.getElementById("requestForm").submit();
-        } else {
-            alert("Silakan login terlebih dahulu untuk mengirim permintaan.");
-            window.location.href = "login.php"; // Ganti dengan path login kamu
+            if (isLoggedIn) {
+                document.getElementById("requestForm").submit();
+            } else {
+                alert("Silakan login terlebih dahulu untuk mengirim permintaan.");
+                window.location.href = "login.php"; // Ganti dengan path login kamu
+            }
         }
-    }
-</script>
+    </script>
 
 
     </body>

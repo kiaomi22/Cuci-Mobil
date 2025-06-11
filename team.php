@@ -43,7 +43,7 @@ require_once 'header.php';
                 <div class="navbar-nav mr-auto">
                     <a href="index.php" class="nav-item nav-link">Beranda</a>
                     <a href="about.php" class="nav-item nav-link">Tentang</a>
-                    <a href="layan.php" class="nav-item nav-link">Layanan</a>
+                    <a href="layanan.php" class="nav-item nav-link">Layanan</a>
                     <a href="harga.php" class="nav-item nav-link">Harga</a>
                     <a href="lokasi.php" class="nav-item nav-link">Lokasi Cuci</a>
                     <a href="cek_booking_user.php" class="nav-item nav-link">Cek Pesanan</a>
@@ -58,7 +58,7 @@ require_once 'header.php';
                     <a href="contact.php" class="nav-item nav-link">Kontak</a>
                 </div>
                 <div class="ml-auto">
-                    <a class="btn btn-custom" href="location.html">Pesan Sekarang</a>
+                <a class="btn btn-custom" href="lokasi.php">Pesan Sekarang</a>
                 </div>                
             </div>
         </nav>

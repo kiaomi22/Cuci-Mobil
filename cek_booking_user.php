@@ -179,5 +179,6 @@ require_once 'header.php';
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
     <script src="js/main.js"></script>
+    
 </body>
 </html>
