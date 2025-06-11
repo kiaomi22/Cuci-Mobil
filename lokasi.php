@@ -1,5 +1,4 @@
 <?php
-include 'koneksi.php';
 require_once 'header.php';
 ?>
 
@@ -121,7 +120,7 @@ require_once 'header.php';
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <form id="requestForm" action="proses_booking.php" method="POST">
+                    <form action="proses_booking.php" method="POST">
                         <div class="control-group">
                             <input type="text" name="nama_pelanggan" class="form-control" placeholder="Nama" required />
                         </div>
@@ -152,7 +151,7 @@ require_once 'header.php';
                             <input type="time" name="jam" class="form-control" required />
                         </div>
                         <div>
-                        <button class="btn btn-custom" type="submit">Pesan</button>      
+                            <button class="btn btn-custom" type="submit">Pesan</button>
                         </div>
                     </form>
                 </div>
@@ -229,20 +228,21 @@ require_once 'header.php';
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+        <script>
+        function checkLogin() {
+            var isLoggedIn = <?php echo json_encode($is_logged_in); ?>;
+
+            if (isLoggedIn) {
+                document.getElementById("requestForm").submit();
+            } else {
+                alert("Silakan login terlebih dahulu untuk mengirim permintaan.");
+                window.location.href = "login.php"; // Ganti dengan path login kamu
+            }
+        }
+        </script>
+        
     </script>
-    <script>
-function checkLogin() {
-    var isLoggedIn = <?php echo json_encode($is_logged_in); ?>;
-
-    if (isLoggedIn) {
-        document.getElementById("requestForm").submit();
-    } else {
-        alert("Silakan login terlebih dahulu untuk mengirim permintaan.");
-        window.location.href = "login.php";
-    }
-}
-</script>
-
 
 </body>
 </html>
