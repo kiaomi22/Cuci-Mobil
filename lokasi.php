@@ -120,7 +120,7 @@ require_once 'header.php';
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <form action="proses_booking.php" method="POST">
+                    <form id="requestForm" action="proses_booking.php" method="POST">
                         <div class="control-group">
                             <input type="text" name="nama_pelanggan" class="form-control" placeholder="Nama" required />
                         </div>
