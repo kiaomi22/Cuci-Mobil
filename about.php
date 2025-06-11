@@ -41,8 +41,8 @@ require_once 'header.php';
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
                     <a href="index.php" class="nav-item nav-link">Beranda</a>
-                    <a href="about.php" class="nav-item nav-link">Tentang</a>
-                    <a href="layanan.php" class="nav-item nav-link active">Layanan</a>
+                    <a href="about.php" class="nav-item nav-link active">Tentang</a>
+                    <a href="layanan.php" class="nav-item nav-link">Layanan</a>
                     <a href="harga.php" class="nav-item nav-link">Harga</a>
                     <a href="lokasi.php" class="nav-item nav-link">Lokasi Cuci</a>
                     <a href="cek_booking_user.php" class="nav-item nav-link">Cek Pesanan</a>
@@ -66,131 +66,142 @@ require_once 'header.php';
 <!-- Navigasi Selesai -->
         
 
+<!-- Tentang Kami Mulai -->
+<div class="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="img/about.jpg" alt="Gambar">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="section-header text-left">
+                    <p>Tentang Kami</p>
+                    <h2>Cuci dan Detailing Mobil</h2>
+                </div>
+                <div class="about-content">
+                    <p>
+                        Di Carwash, kami ahli dalam layanan cuci dan detailing mobil profesional yang dirancang untuk menjaga kendaraanmu tetap bersih luar dan dalam. Kami percaya bahwa mobil bersih bukan hanya terlihat lebih baik — tetapi juga lebih nyaman dikendarai.
+                    </p>
+                    <ul>
+                        <li><i class="far fa-check-circle"></i>Cuci jok – Menghilangkan noda dan kotoran pada jok mobil</li>
+                        <li><i class="far fa-check-circle"></i>Vakum – Pembersihan menyeluruh untuk interior bebas debu</li>
+                        <li><i class="far fa-check-circle"></i>Cuci basah interior – Pembersihan menyeluruh pada permukaan interior</li>
+                        <li><i class="far fa-check-circle"></i>Bersih kaca – Pembersihan tanpa gores untuk kaca bening</li>
+                    </ul>
+                    <a class="btn btn-custom" href="">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Tentang Kami Selesai -->
+        
+<!-- Fakta Mulai -->
+<div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <div class="facts-text">
+                        <h3 data-toggle="counter-up">5</h3>
+                        <p>Titik Layanan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="fa fa-user"></i>
+                    <div class="facts-text">
+                        <h3 data-toggle="counter-up">10</h3>
+                        <p>Teknisi & Pekerja</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="fa fa-users"></i>
+                    <div class="facts-text">
+                        <h3 data-toggle="counter-up">100</h3>
+                        <p>Pelanggan Puas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="fa fa-check"></i>
+                    <div class="facts-text">
+                        <h3 data-toggle="counter-up">250</h3>
+                        <p>Proyek Selesai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fakta Selesai -->
 
-      <!-- Layanan Mulai -->
-<div class="service">
+
+<!-- Team Start -->
+<div class="team">
     <div class="container">
         <div class="section-header text-center">
-            <p>Apa yang Kami Tawarkan?</p>
-            <h2>Layanan Cuci Premium</h2>
+            <p>Kenali Tim Kami</p>
+            <h2>Insinyur & Pekerja Kami</h2>
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <i class="flaticon-car-wash-1"></i>
-                    <h3>Cuci Eksterior</h3>
-                    <p>Kami memberikan pencucian eksterior menyeluruh untuk menghilangkan kotoran dan debu sehingga mobilmu kembali bersinar seperti baru.</p>
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/team-1.png" alt="Foto Tim">
+                    </div>
+                    <div class="team-text">
+                        <h2>Aleea Carisa</h2>
+                        <p>Teknisi</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <i class="flaticon-car-wash"></i>
-                    <h3>Cuci Interior</h3>
-                    <p>Layanan pembersihan interior kami membersihkan secara mendalam jok dan permukaan dalam mobil untuk memberikan kesegaran maksimal.</p>
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/team-2.png" alt="Foto Tim">
+                    </div>
+                    <div class="team-text">
+                        <h2>Febby Yolanda</h2>
+                        <p>Teknisi</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <i class="flaticon-vacuum-cleaner"></i>
-                    <h3>Vakum Interior</h3>
-                    <p>Kami menggunakan vakum profesional untuk menyedot debu dan kotoran dari seluruh bagian dalam mobil.</p>
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/team-3.png" alt="Foto Tim">
+                    </div>
+                    <div class="team-text">
+                        <h2>Nur Aila Zahra</h2>
+                        <p>Pekerja</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <i class="flaticon-seat"></i>
-                    <h3>Cuci Jok</h3>
-                    <p>Pembersihan jok secara khusus untuk menghilangkan noda dan bau, membuat mobil terasa nyaman dan bersih kembali.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <i class="flaticon-car-service"></i>
-                    <h3>Bersih Kaca</h3>
-                    <p>Pembersihan kaca tanpa gores untuk tampilan lebih jernih dan meningkatkan visibilitas saat berkendara.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <i class="flaticon-car-service-2"></i>
-                    <h3>Cuci Basah</h3>
-                    <p>Pembersihan basah menyeluruh untuk menghilangkan kotoran membandel dan memastikan hasil akhir yang bersih sempurna.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <i class="flaticon-car-wash"></i>
-                    <h3>Ganti Oli</h3>
-                    <p>Penggantian oli cepat dan profesional untuk menjaga performa mesin tetap optimal.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="service-item">
-                    <i class="flaticon-brush-1"></i>
-                    <h3>Perbaikan Rem</h3>
-                    <p>Layanan perbaikan rem yang andal untuk memastikan keamanan kamu saat berkendara.</p>
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="img/team-4.png" alt="Foto Tim">
+                    </div>
+                    <div class="team-text">
+                        <h2>Zaskia Jihan Nabila</h2>
+                        <p>Pekerja</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Layanan Selesai -->
+<!-- Team End -->
 
-        
-        
-<!-- Testimonial Start -->
-<div class="testimonial">
-    <div class="container">
-        <div class="section-header text-center">
-            <p>Testimoni</p>
-            <h2>Apa kata pelanggan kami</h2>
-        </div>
-        <div class="owl-carousel testimonials-carousel">
-            <div class="testimonial-item">
-                <img src="img/testimonial-1.jpg" alt="Foto">
-                <div class="testimonial-text">
-                    <h3>Fajar Pratama</h3>
-                    <h4>Cuci Lengkap</h4>
-                    <p>
-                        Layanan luar biasa! Mobil saya belum pernah sebersih ini. Pasti akan kembali lagi.
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <img src="img/testimonial-2.jpg" alt="Foto">
-                <div class="testimonial-text">
-                    <h3>Siti Aulia</h3>
-                    <h4>Cuci Dalam</h4>
-                    <p>
-                        Staf ramah, pembersihan cepat, dan hasil memuaskan. Sangat direkomendasikan!
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <img src="img/testimonial-3.jpg" alt="Foto">
-                <div class="testimonial-text">
-                    <h3>Rizky Hidayat</h3>
-                    <h4>Cuci Lengkap</h4>
-                    <p>
-                        Paketnya terjangkau dan hasil sangat rapi. Saya coba paket premium dan benar-benar worth it!
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <img src="img/testimonial-4.jpg" alt="Foto">
-                <div class="testimonial-text">
-                    <h3>Putri Anggraini</h3>
-                    <h4>Cuci Luar</h4>
-                    <p>
-                        Booking sangat mudah, dan hasilnya melebihi ekspektasi. Sangat puas!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Testimonial End -->
-    
+
  <!-- Footer Mulai -->
 <div class="footer">
     <div class="container">
@@ -261,5 +272,5 @@ require_once 'header.php';
 <!-- Javascript Template -->
 <script src="js/main.js"></script>
 
-    </body>
+    </body>
 </html>
