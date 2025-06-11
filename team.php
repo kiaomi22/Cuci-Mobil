@@ -84,10 +84,6 @@ require_once 'header.php';
                         <h2>Aleea Carisa</h2>
                         <p>Insinyur</p>
                         <div class="team-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -101,10 +97,6 @@ require_once 'header.php';
                         <h2>Febby Yolanda</h2>
                         <p>Insinyur</p>
                         <div class="team-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -118,10 +110,6 @@ require_once 'header.php';
                         <h2>Nur Aila Zahra</h2>
                         <p>Pekerja</p>
                         <div class="team-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -135,10 +123,6 @@ require_once 'header.php';
                         <h2>Zaskia Jihan Nabila</h2>
                         <p>Pekerja</p>
                         <div class="team-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
