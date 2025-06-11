@@ -1,3 +1,7 @@
+<?php
+require_once 'header.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,60 +29,7 @@
     </head>
 
     <body>
-        <!-- Top Bar Start -->
-        <div class="top-bar">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="logo">
-                            <a href="index.html">
-                                <h1>Blynk<span>CarWash</span></h1>
-                                <!-- <img src="img/logo.jpg" alt="Logo"> -->
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="top-bar-item">
-                                    <div class="top-bar-icon">
-                                        <i class="far fa-clock"></i>
-                                    </div>
-                                    <div class="top-bar-text">
-                                  <h3>Jam Buka</h3>
-                                  <p>Senin - Jumat, 8:00 - 9:00</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="top-bar-item">
-                                    <div class="top-bar-icon">
-                                        <i class="fa fa-phone-alt"></i>
-                                    </div>
-                                    <div class="top-bar-text">
-                                  <h3>Telepon</h3>
-                                        <p>+62 857-5881-0007</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="top-bar-item">
-                                    <div class="top-bar-icon">
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <div class="top-bar-text">
-                                        <h3>Email</h3>
-                                        <p>blynkcarwash@gmail.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Top Bar End -->
-
+        
 <!-- Navigasi Mulai -->
 <div class="nav-bar">
     <div class="container">
@@ -91,13 +42,13 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
                     <a href="index.php" class="nav-item nav-link">Beranda</a>
-                    <a href="about.html" class="nav-item nav-link active">Tentang</a>
+                    <a href="about.html" class="nav-item nav-link">Tentang</a>
                     <a href="service.html" class="nav-item nav-link">Layanan</a>
                     <a href="price.html" class="nav-item nav-link">Harga</a>
                     <a href="location.html" class="nav-item nav-link">Lokasi Cuci</a>
                     <a href="cek_booking_user.php" class="nav-item nav-link">Cek Pesanan</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Halaman Lain</a>
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Halaman Lain</a>
                         <div class="dropdown-menu">
                             <a href="blog.html" class="dropdown-item">Blog</a>
                             <a href="single.php" class="dropdown-item">Detail</a>
@@ -115,86 +66,8 @@
 </div>
 <!-- Navigasi Selesai -->
         
-
-<!-- Tentang Kami Mulai -->
-<div class="about">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="about-img">
-                    <img src="img/about.jpg" alt="Gambar">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="section-header text-left">
-                    <p>Tentang Kami</p>
-                    <h2>Cuci dan Detailing Mobil</h2>
-                </div>
-                <div class="about-content">
-                    <p>
-                        Di Carwash, kami ahli dalam layanan cuci dan detailing mobil profesional yang dirancang untuk menjaga kendaraanmu tetap bersih luar dan dalam. Kami percaya bahwa mobil bersih bukan hanya terlihat lebih baik — tetapi juga lebih nyaman dikendarai.
-                    </p>
-                    <ul>
-                        <li><i class="far fa-check-circle"></i>Cuci jok – Menghilangkan noda dan kotoran pada jok mobil</li>
-                        <li><i class="far fa-check-circle"></i>Vakum – Pembersihan menyeluruh untuk interior bebas debu</li>
-                        <li><i class="far fa-check-circle"></i>Cuci basah interior – Pembersihan menyeluruh pada permukaan interior</li>
-                        <li><i class="far fa-check-circle"></i>Bersih kaca – Pembersihan tanpa gores untuk kaca bening</li>
-                    </ul>
-                    <a class="btn btn-custom" href="">Selengkapnya</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Tentang Kami Selesai -->
         
-<!-- Fakta Mulai -->
-<div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="facts-item">
-                    <i class="fa fa-map-marker-alt"></i>
-                    <div class="facts-text">
-                        <h3 data-toggle="counter-up">5</h3>
-                        <p>Titik Layanan</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="facts-item">
-                    <i class="fa fa-user"></i>
-                    <div class="facts-text">
-                        <h3 data-toggle="counter-up">10</h3>
-                        <p>Teknisi & Pekerja</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="facts-item">
-                    <i class="fa fa-users"></i>
-                    <div class="facts-text">
-                        <h3 data-toggle="counter-up">100</h3>
-                        <p>Pelanggan Puas</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="facts-item">
-                    <i class="fa fa-check"></i>
-                    <div class="facts-text">
-                        <h3 data-toggle="counter-up">250</h3>
-                        <p>Proyek Selesai</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Fakta Selesai -->
-
-
-<!-- Team Start -->
+ <!-- Team Start -->
 <div class="team">
     <div class="container">
         <div class="section-header text-center">
@@ -209,7 +82,13 @@
                     </div>
                     <div class="team-text">
                         <h2>Aleea Carisa</h2>
-                        <p>Teknisi</p>
+                        <p>Insinyur</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,7 +99,13 @@
                     </div>
                     <div class="team-text">
                         <h2>Febby Yolanda</h2>
-                        <p>Teknisi</p>
+                        <p>Insinyur</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,6 +117,12 @@
                     <div class="team-text">
                         <h2>Nur Aila Zahra</h2>
                         <p>Pekerja</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -243,6 +134,12 @@
                     <div class="team-text">
                         <h2>Zaskia Jihan Nabila</h2>
                         <p>Pekerja</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -252,7 +149,7 @@
 <!-- Team End -->
 
 
- <!-- Footer Mulai -->
+<!-- Footer Mulai -->
 <div class="footer">
     <div class="container">
         <div class="row">

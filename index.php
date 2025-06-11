@@ -1,7 +1,6 @@
 <?php
-session_start();
+require_once 'header.php';
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,74 +29,6 @@ session_start();
 </head>
 
 <body>
-  <!-- Top Bar Start -->
-  <div class="top-bar">
-      <div class="container">
-          <div class="row align-items-center">
-              <!-- Logo -->
-              <div class="col-lg-4 col-md-12">
-                  <div class="logo">
-                      <a href="index.php">
-                          <h1>Blynk<span>CarWash</span></h1>
-                      </a>
-                  </div>
-              </div>
-
-              <!-- Contact Info -->
-              <div class="col-lg-8 col-md-12">
-                  <div class="row">
-                      <!-- Opening Hour -->
-                      <div class="col-4">
-                          <div class="top-bar-item">
-                              <div class="top-bar-icon">
-                                  <i class="far fa-clock"></i>
-                              </div>
-                              <div class="top-bar-text">
-                                  <h3>Jam Buka</h3>
-                                  <p>Senin - Jumat, 8:00 - 9:00</p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!-- Call Us -->
-                      <div class="col-4">
-                          <div class="top-bar-item">
-                              <div class="top-bar-icon">
-                                  <i class="fa fa-phone-alt"></i>
-                              </div>
-                              <div class="top-bar-text">
-                                  <h3>Telepon</h3>
-                                  <p>+62 857-5881-0007</p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!-- Email Us -->
-                      <div class="col-4">
-                          <div class="top-bar-item d-flex align-items-center justify-content-between">
-                              <div class="d-flex">
-                                  <div class="top-bar-icon mr-2">
-                                      <i class="far fa-envelope"></i>
-                                  </div>
-                                  <div class="top-bar-text">
-                                      <h3>Email</h3>
-                                      <p>blynkcarwash@gmail.com</p>
-                                  </div>
-                              </div>
-                               <?php if (isset($_SESSION['username'])): ?>
-                                <a href="logout.php" class="btn btn-danger btn-sm ml-5">Keluar</a>
-                            <?php else: ?>
-                                <a href="login.php" class="btn btn-primary btn-sm ml-5">Masuk</a>
-                            <?php endif; ?>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- Top Bar End -->
-
 <!-- Navigasi Mulai -->
 <div class="nav-bar">
     <div class="container">
@@ -109,22 +40,21 @@ session_start();
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
-                    <a href="index.html" class="nav-item nav-link active">Beranda</a>
-                    <a href="about.html" class="nav-item nav-link">Tentang</a>
-                    <a href="service.html" class="nav-item nav-link">Layanan</a>
-                    <a href="price.html" class="nav-item nav-link">Harga</a>
-                    <a href="location.html" class="nav-item nav-link">Lokasi Cuci</a>
-                    <a href="cek_booking_user.html" class="nav-item nav-link">Cek Pesanan</a>
+                    <a href="index.php" class="nav-item nav-link active">Beranda</a>
+                    <a href="about.php" class="nav-item nav-link">Tentang</a>
+                    <a href="layanan.php" class="nav-item nav-link">Layanan</a>
+                    <a href="harga.php" class="nav-item nav-link">Harga</a>
+                    <a href="lokasi.php" class="nav-item nav-link">Lokasi Cuci</a>
+                    <a href="cek_booking_user.php" class="nav-item nav-link">Cek Pesanan</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Halaman Lain</a>
                         <div class="dropdown-menu">
-                            <a href="blog.html" class="dropdown-item">Blog</a>
-                            <a href="single.html" class="dropdown-item">Detail</a>
-                            <a href="team.html" class="dropdown-item">Tim Kami</a>
-                            <a href="booking.html" class="dropdown-item">Jadwal Booking</a>
+                            <a href="blog.php" class="dropdown-item">Blog</a>
+                            <a href="single.php" class="dropdown-item">Detail</a>
+                            <a href="team.php" class="dropdown-item">Tim Kami</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Kontak</a>
+                    <a href="contact.php" class="nav-item nav-link">Kontak</a>
                 </div>
                     <div class="ml-auto">
                     <a class="btn btn-custom" href="booking.html">Pesan Sekarang</a>
@@ -462,25 +392,27 @@ session_start();
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5">
-                <div class="location-form">
-                    <h3>Request Cuci Mobil</h3>
-                    <form method="post" action="request_submit.php">
-                        <div class="control-group">
-                            <input type="text" class="form-control" name="name" placeholder="Nama" required="required" />
-                        </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" name="email" placeholder="Email" required="required" />
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control" name="description" placeholder="Keterangan" required="required"></textarea>
-                        </div>
-                        <div>
-                            <button class="btn btn-custom" type="submit">Kirim Permintaan</button>
-                        </div>
-                    </form>
-                </div>
+                <div class="col-lg-5">
+             <div class="location-form">
+             <h3>Request Cuci Mobil</h3>
+            <form id="requestForm" method="post" action="request_submit.php">
+            <div class="control-group">
+                <input type="text" class="form-control" name="name" placeholder="Nama" required="required" />
             </div>
+            <div class="control-group">
+                <input type="email" class="form-control" name="email" placeholder="Email" required="required" />
+            </div>
+            <div class="control-group">
+                <textarea class="form-control" name="description" placeholder="Keterangan" required="required"></textarea>
+            </div>
+            <div>
+                <button class="btn btn-custom" type="button" onclick="checkLogin()">Kirim Permintaan</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+        
         </div>
     </div>
 </div>
@@ -750,6 +682,20 @@ session_start();
 
 <!-- Javascript Template -->
 <script src="js/main.js"></script>
+
+<script>
+    function checkLogin() {
+        var isLoggedIn = <?php echo json_encode($is_logged_in); ?>;
+
+        if (isLoggedIn) {
+            document.getElementById("requestForm").submit();
+        } else {
+            alert("Silakan login terlebih dahulu untuk mengirim permintaan.");
+            window.location.href = "login.php"; // Ganti dengan path login kamu
+        }
+    }
+</script>
+
 
     </body>
 </html>

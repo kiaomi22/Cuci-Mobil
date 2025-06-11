@@ -1,6 +1,8 @@
 <?php
 include 'koneksi.php';
+require_once 'header.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,58 +19,6 @@ include 'koneksi.php';
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-12">
-                    <div class="logo">
-                        <a href="index.html">
-                            <h1>Blynk<span>CarWash</span></h1>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="top-bar-item">
-                                <div class="top-bar-icon">
-                                    <i class="far fa-clock"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h3>Jam Buka</h3>
-                                    <p>Senin - Jumat, 8:00 - 9:00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item">
-                                <div class="top-bar-icon">
-                                    <i class="fa fa-phone-alt"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h3>Telepon</h3>
-                                    <p>+62 857-5881-0007</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item">
-                                <div class="top-bar-icon">
-                                    <i class="far fa-envelope"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h3>Email</h3>
-                                    <p>blinkcarwash@gmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="nav-bar">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
