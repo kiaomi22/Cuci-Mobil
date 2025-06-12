@@ -92,7 +92,7 @@ require_once 'header.php';
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom" href="">Pesan Sekarang</a>
+                         <a class="btn btn-custom" href="lokasi.php">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@ require_once 'header.php';
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom" href="">Pesan Sekarang</a>
+                         <a class="btn btn-custom" href="lokasi.php">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@ require_once 'header.php';
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom" href="">Pesan Sekarang</a>
+                         <a class="btn btn-custom" href="lokasi.php">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
