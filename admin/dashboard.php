@@ -152,7 +152,7 @@ $latest = $conn->query("SELECT * FROM booking ORDER BY created_at DESC LIMIT 5")
         </div>
     </div>
 
-    <h2>5 Booking Terbaru</h2>
+    <h2>Booking Terbaru</h2>
     <table>
         <thead>
             <tr>
