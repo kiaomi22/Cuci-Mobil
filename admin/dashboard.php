@@ -28,7 +28,7 @@ $selesai = $conn->query("SELECT COUNT(*) AS total FROM booking WHERE status = 'S
 $batal = $conn->query("SELECT COUNT(*) AS total FROM booking WHERE status = 'Batal'")->fetch_assoc()['total'];
 
 // Booking terbaru (5 terakhir)
-$latest = $conn->query("SELECT * FROM booking ORDER BY created_at DESC LIMIT 5");
+$latest = $conn->query("SELECT * FROM booking WHERE tanggal = '$today' ORDER BY created_at DESC LIMIT 5");
 ?>
 
 <!DOCTYPE html>
@@ -123,6 +123,7 @@ $latest = $conn->query("SELECT * FROM booking ORDER BY created_at DESC LIMIT 5")
     <a href="dashboard.php">🏠 Dashboard</a>
     <a href="booking_list.php">📋 Daftar Booking</a>
     <a href="admin_requests.php">📩 Request & Saran Pelanggan</a>
+    <a href="kelola.blog.php">📝 Kelola Blog</a>
     <a href="logout.php">🔒 Logout</a>
 </div>
 
